@@ -3,58 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoulQ — deník nálad a duševní pohody</title>
-  <meta name="description" content="SoulQ je aplikace pro sledování nálad. Zaznamenávejte, jak se cítíte, objevujte souvislosti a pečujte o svou duševní pohodu.">
-  <link rel="stylesheet" href="assets/style.css">
+  <title>SoulQ — deník nálad</title>
+  <meta name="description" content="SoulQ je tichý deník nálad. Pár vteřin denně — a časem uvidíte, co vaše dny skutečně ovlivňuje.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Logo SoulQ">SoulQ</a>
-    <a class="lang-switch" href="en/index.html">🇬🇧 English</a>
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+      <nav class="site-nav" aria-label="Hlavní navigace">
+        <a href="support.html">Podpora</a>
+        <a href="privacy.html" class="hide-sm">Ochrana údajů</a>
+        <a class="lang-switch" href="en/index.html" lang="en" hreflang="en">EN</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <img class="logo" src="assets/logo.svg" alt="Logo SoulQ">
-    <h1>SoulQ</h1>
-    <p class="tagline">Deník nálad, který vám pomůže porozumět tomu, jak se cítíte — a proč.</p>
-    <div class="store-badges">
-      <span class="store-badge soon">Google Play — již brzy</span>
-      <span class="store-badge soon">App Store — již brzy</span>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Deník nálad pro Android a iOS</p>
+        <h1>Jak se dnes cítíš<span class="dot">?</span></h1>
+        <p class="lead">SoulQ vám tuhle otázku položí každý den. Odpověď zabere pár vteřin — a časem uvidíte, co vaše dny skutečně ovlivňuje.</p>
+        <div class="store-badges">
+          <span class="store-badge soon"><span><small>Připravujeme</small>Google&nbsp;Play</span></span>
+          <span class="store-badge soon"><span><small>Připravujeme</small>App&nbsp;Store</span></span>
+        </div>
+        <p class="trust-line"><b>Bez reklam</b> · <b>bez prodeje dat</b> · účet smažete jedním klepnutím</p>
+      </div>
 
-  <section class="features">
-    <div class="feature">
-      <div class="icon">📝</div>
-      <h3>Rychlé zaznamenání</h3>
-      <p>Zapište svou náladu, pocity a jejich důvody během pár vteřin.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">📊</div>
-      <h3>Přehledy a souvislosti</h3>
-      <p>Sledujte svou cestu v čase a objevujte, co vaši náladu ovlivňuje.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🔔</div>
-      <h3>Šetrná připomenutí</h3>
-      <p>Volitelná upozornění vám připomenou, abyste na sebe nezapomněli.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🔒</div>
-      <h3>Vaše data patří vám</h3>
-      <p>Žádné reklamy, žádný prodej dat. Záznamy jsou soukromé a účet lze kdykoli smazat.</p>
-    </div>
-  </section>
+      <div class="phone" id="checkin" aria-label="Ukázka denního záznamu v aplikaci SoulQ">
+        <p class="greeting">Dobrý večer</p>
+        <p class="question">Jak se cítíš?</p>
+        <ul class="moods">
+          <li>
+            <button type="button" class="mood" data-mood="strašně" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 10l2 -1M17 10l-2 -1M7 13a2 2 0 0 0 2 0M17 13a2 2 0 0 0 -2 0M8 18a4 4 0 0 1 8 0"/>
+                </svg>
+              </span>
+              <span class="label">Strašně</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="špatně" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 9l2 1M17 9l-2 1M9 17h6"/>
+                  <circle cx="8" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="16" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="label">Špatně</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="neutrálně" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 16.5h6"/>
+                  <circle cx="8" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="16" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="label">Neutrálně</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="dobře" aria-pressed="true">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M8 15c1.5 2 4.5 2 8 0"/>
+                  <circle cx="8" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="16" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="label">Dobře</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="skvěle" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 12a2 2 0 0 1 3 0M15 12a2 2 0 0 1 3 0M7 16c2 2.5 6 2.5 10 0"/>
+                </svg>
+              </span>
+              <span class="label">Skvěle</span>
+            </button>
+          </li>
+        </ul>
+        <p class="followup">Proč se cítíš <b data-slot>dobře</b>?</p>
+        <div class="chips" aria-hidden="true">
+          <span class="chip">rodina</span>
+          <span class="chip">práce</span>
+          <span class="chip">spánek</span>
+          <span class="chip">pohyb</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Co SoulQ umí</p>
+      <h2>Malý rituál, velký přehled</h2>
+      <p class="section-lead">Žádné dlouhé deníkové zápisy. Nálada, důvod, hotovo — zbytek poskládá aplikace.</p>
+      <div class="features">
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </span>
+          <h3>Záznam za pár vteřin</h3>
+          <p>Vyberete náladu, přidáte důvod a případně poznámku. Ranní i večerní check-in stihnete u kávy.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+          </span>
+          <h3>Cesta a souvislosti</h3>
+          <p>Záložka Cesta ukáže vývoj nálad v čase a to, které důvody se u vás opakují nejčastěji.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+          </span>
+          <h3>Připomenutí podle vás</h3>
+          <p>Volitelná upozornění v čase, který si sami nastavíte. Žádný spam — jen jemné „nezapomeň na sebe“.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </span>
+          <h3>Synchronizace a záloha</h3>
+          <p>S účtem jsou záznamy bezpečně zálohované a dostupné na všech vašich zařízeních. Offline funguje vše dál.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="privacy-band">
+        <div>
+          <h2>Vaše nálady patří jen vám</h2>
+          <p>Záznamy o tom, jak se cítíte, jsou to nejosobnější, co v telefonu máte. Proto v SoulQ nejsou reklamy, trackery ani analytika třetích stran — a účet i s daty smažete kdykoli přímo v aplikaci.</p>
+          <a class="button" href="privacy.html">Přečíst zásady ochrany údajů</a>
+        </div>
+        <ul>
+          <li>Přenos dat vždy šifrovaný</li>
+          <li>Nikdy neprodáváme ani nesdílíme data</li>
+          <li>Žádné sledování polohy</li>
+          <li>Smazání účtu jedním klepnutím</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <nav>
-      <a href="privacy.html">Ochrana osobních údajů</a>
-      <a href="terms.html">Podmínky užití</a>
-      <a href="support.html">Podpora</a>
-      <a href="delete-account.html">Smazání účtu</a>
-    </nav>
-    <p>© 2026 SoulQ. Všechna práva vyhrazena.</p>
+    <div class="inner">
+      <div class="about">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+        <p>Deník nálad pro každodenní péči o duševní pohodu. SoulQ nenahrazuje odbornou péči — v krizi volejte 116&nbsp;123 (nonstop, zdarma).</p>
+      </div>
+      <nav aria-label="Aplikace">
+        <h3>Aplikace</h3>
+        <ul>
+          <li><a href="support.html">Podpora a časté dotazy</a></li>
+          <li><a href="delete-account.html">Smazání účtu</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Právní informace">
+        <h3>Právní</h3>
+        <ul>
+          <li><a href="privacy.html">Ochrana osobních údajů</a></li>
+          <li><a href="terms.html">Podmínky užití</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© 2026 SoulQ</span>
+      <span><a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></span>
+    </div>
   </footer>
+
+  <script>
+    (function () {
+      var moods = document.querySelectorAll('.mood');
+      var slot = document.querySelector('[data-slot]');
+      moods.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          moods.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+          btn.setAttribute('aria-pressed', 'true');
+          slot.textContent = btn.dataset.mood;
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

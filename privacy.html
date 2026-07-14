@@ -5,112 +5,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zásady ochrany osobních údajů — SoulQ</title>
   <meta name="description" content="Zásady ochrany osobních údajů mobilní aplikace SoulQ.">
-  <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Logo SoulQ">SoulQ</a>
-    <a class="lang-switch" href="en/privacy.html">🇬🇧 English</a>
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+      <nav class="site-nav" aria-label="Hlavní navigace">
+        <a href="support.html">Podpora</a>
+        <a href="terms.html" class="hide-sm">Podmínky užití</a>
+        <a class="lang-switch" href="en/privacy.html" lang="en" hreflang="en">EN</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Zásady ochrany osobních údajů</h1>
-    <p class="meta">Platné od 14. 7. 2026 · Vztahují se na mobilní aplikaci SoulQ (Android a iOS)</p>
+  <div class="doc-hero">
+    <div class="inner">
+      <p class="eyebrow">Právní dokument</p>
+      <h1>Zásady ochrany osobních údajů</h1>
+      <p class="doc-meta"><span>Platné od <b>14. 7. 2026</b></span><span>Aplikace <b>SoulQ</b> pro Android a iOS</span></p>
+    </div>
+  </div>
 
-    <p>Tyto zásady popisují, jaké osobní údaje zpracovává mobilní aplikace <strong>SoulQ</strong> (dále jen „aplikace“), za jakým účelem, jak dlouho a jaká máte v souvislosti s tím práva. Zpracování probíhá v souladu s nařízením (EU) 2016/679 (GDPR).</p>
+  <div class="doc-layout">
+    <nav class="toc" aria-label="Obsah dokumentu">
+      <p class="toc-title">Obsah</p>
+      <ol>
+        <li><a href="#spravce">Správce osobních údajů</a></li>
+        <li><a href="#udaje">Jaké údaje zpracováváme</a></li>
+        <li><a href="#nedelame">Co neděláme</a></li>
+        <li><a href="#zaklad">Právní základ</a></li>
+        <li><a href="#ulozeni">Uložení a zpracovatelé</a></li>
+        <li><a href="#doba">Doba uchování</a></li>
+        <li><a href="#prava">Vaše práva</a></li>
+        <li><a href="#zabezpeceni">Zabezpečení</a></li>
+        <li><a href="#deti">Děti</a></li>
+        <li><a href="#upozorneni">Upozornění</a></li>
+        <li><a href="#zmeny">Změny zásad</a></li>
+      </ol>
+    </nav>
 
-    <h2>1. Správce osobních údajů</h2>
-    <p>Správcem osobních údajů je provozovatel aplikace SoulQ.<br>
-    Kontakt: <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></p>
+    <main class="doc">
+      <p>Tyto zásady popisují, jaké osobní údaje zpracovává mobilní aplikace <strong>SoulQ</strong> (dále jen „aplikace“), za jakým účelem, jak dlouho a jaká máte v souvislosti s tím práva. Zpracování probíhá v souladu s nařízením (EU) 2016/679 (GDPR).</p>
 
-    <h2>2. Jaké údaje zpracováváme</h2>
-    <table>
-      <tr><th>Kategorie</th><th>Údaje</th><th>Účel</th></tr>
-      <tr>
-        <td>Údaje o účtu</td>
-        <td>e‑mailová adresa, heslo (uloženo pouze v zabezpečené podobě), uživatelské jméno, rok narození; při přihlášení přes Google nebo Apple také identifikátor a jméno poskytnuté těmito službami</td>
-        <td>vytvoření a správa účtu, přihlášení, obnova hesla, přizpůsobení obsahu podle věku</td>
-      </tr>
-      <tr>
-        <td>Profilová fotografie</td>
-        <td>fotografie, kterou si sami dobrovolně nahrajete</td>
-        <td>zobrazení ve vašem profilu</td>
-      </tr>
-      <tr>
-        <td>Záznamy v deníku</td>
-        <td>zaznamenané nálady, pocity, jejich důvody a případné poznámky</td>
-        <td>poskytování hlavní funkce aplikace — vedení deníku nálad, přehledy a statistiky; synchronizace a záloha mezi zařízeními</td>
-      </tr>
-      <tr>
-        <td>Technické údaje</td>
-        <td>časové pásmo zařízení, nastavení aplikace (např. čas připomenutí, motiv)</td>
-        <td>správné plánování upozornění a fungování aplikace</td>
-      </tr>
-    </table>
+      <h2 id="spravce">1. Správce osobních údajů</h2>
+      <p>Správcem osobních údajů je provozovatel aplikace SoulQ.<br>
+      Kontakt: <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></p>
 
-    <p>Záznamy o náladách a pocitech mohou vypovídat o vašem duševním rozpoložení. Zacházíme s nimi proto se zvýšenou péčí: slouží <strong>výhradně</strong> k tomu, aby vám aplikace fungovala, a nikdy je nevyužíváme k jinému účelu, neanalyzujeme je pro reklamu ani je nikomu nepředáváme.</p>
+      <h2 id="udaje">2. Jaké údaje zpracováváme</h2>
+      <table>
+        <thead>
+          <tr><th>Kategorie</th><th>Údaje</th><th>Účel</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Údaje o účtu</td>
+            <td>e‑mailová adresa, heslo (uloženo pouze v zabezpečené podobě), uživatelské jméno, rok narození; při přihlášení přes Google nebo Apple také identifikátor a jméno poskytnuté těmito službami</td>
+            <td>vytvoření a správa účtu, přihlášení, obnova hesla, přizpůsobení obsahu podle věku</td>
+          </tr>
+          <tr>
+            <td>Profilová fotografie</td>
+            <td>fotografie, kterou si sami dobrovolně nahrajete</td>
+            <td>zobrazení ve vašem profilu</td>
+          </tr>
+          <tr>
+            <td>Záznamy v deníku</td>
+            <td>zaznamenané nálady, pocity, jejich důvody a případné poznámky</td>
+            <td>poskytování hlavní funkce aplikace — vedení deníku nálad, přehledy a statistiky; synchronizace a záloha mezi zařízeními</td>
+          </tr>
+          <tr>
+            <td>Technické údaje</td>
+            <td>časové pásmo zařízení, nastavení aplikace (např. čas připomenutí, motiv)</td>
+            <td>správné plánování upozornění a fungování aplikace</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h2>3. Co neděláme</h2>
-    <ul>
-      <li>Nezobrazujeme reklamy a nepoužíváme reklamní ani marketingové nástroje.</li>
-      <li>Neprodáváme ani nepronajímáme vaše údaje třetím stranám.</li>
-      <li>Nepoužíváme nástroje pro sledování chování (analytics, trackery třetích stran).</li>
-      <li>Nesledujeme vaši polohu.</li>
-    </ul>
+      <p>Záznamy o náladách a pocitech mohou vypovídat o vašem duševním rozpoložení. Zacházíme s nimi proto se zvýšenou péčí: slouží <strong>výhradně</strong> k tomu, aby vám aplikace fungovala, a nikdy je nevyužíváme k jinému účelu, neanalyzujeme je pro reklamu ani je nikomu nepředáváme.</p>
 
-    <h2>4. Právní základ zpracování</h2>
-    <ul>
-      <li><strong>Plnění smlouvy</strong> (čl. 6 odst. 1 písm. b GDPR) — vedení účtu a poskytování funkcí aplikace.</li>
-      <li><strong>Souhlas</strong> (čl. 6 odst. 1 písm. a, resp. čl. 9 odst. 2 písm. a GDPR) — dobrovolné zaznamenávání nálad a pocitů a nahrání profilové fotografie. Souhlas můžete kdykoli odvolat smazáním záznamů, fotografie nebo celého účtu.</li>
-      <li><strong>Oprávněný zájem</strong> (čl. 6 odst. 1 písm. f GDPR) — zabezpečení služby a předcházení zneužití.</li>
-    </ul>
+      <h2 id="nedelame">3. Co neděláme</h2>
+      <ul>
+        <li>Nezobrazujeme reklamy a nepoužíváme reklamní ani marketingové nástroje.</li>
+        <li>Neprodáváme ani nepronajímáme vaše údaje třetím stranám.</li>
+        <li>Nepoužíváme nástroje pro sledování chování (analytics, trackery třetích stran).</li>
+        <li>Nesledujeme vaši polohu.</li>
+      </ul>
 
-    <h2>5. Kde jsou údaje uloženy a kdo je zpracovává</h2>
-    <p>Část dat (záznamy, nastavení) je uložena přímo ve vašem zařízení. Údaje o účtu a synchronizovaná data jsou uloženy u našeho smluvního zpracovatele:</p>
-    <ul>
-      <li><strong>Supabase</strong> (Supabase, Inc.) — databáze, autentizace a úložiště souborů. Více na <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a>.</li>
-      <li>Při přihlášení přes <strong>Google</strong> nebo <strong>Apple</strong> zpracovávají tito poskytovatelé přihlašovací údaje podle svých vlastních zásad ochrany soukromí.</li>
-    </ul>
-    <p>Pokud dochází k předání údajů mimo Evropský hospodářský prostor, je zajištěno vhodnými zárukami podle kapitoly V GDPR (zejména standardními smluvními doložkami).</p>
+      <h2 id="zaklad">4. Právní základ zpracování</h2>
+      <ul>
+        <li><strong>Plnění smlouvy</strong> (čl. 6 odst. 1 písm. b GDPR) — vedení účtu a poskytování funkcí aplikace.</li>
+        <li><strong>Souhlas</strong> (čl. 6 odst. 1 písm. a, resp. čl. 9 odst. 2 písm. a GDPR) — dobrovolné zaznamenávání nálad a pocitů a nahrání profilové fotografie. Souhlas můžete kdykoli odvolat smazáním záznamů, fotografie nebo celého účtu.</li>
+        <li><strong>Oprávněný zájem</strong> (čl. 6 odst. 1 písm. f GDPR) — zabezpečení služby a předcházení zneužití.</li>
+      </ul>
 
-    <h2>6. Doba uchování</h2>
-    <p>Údaje uchováváme po dobu existence vašeho účtu. Po smazání účtu jsou všechny vaše údaje (účet, záznamy, profilová fotografie) trvale odstraněny; ze záložních kopií zmizí nejpozději do 30 dnů. Data uložená pouze ve vašem zařízení odstraníte odinstalováním aplikace.</p>
+      <h2 id="ulozeni">5. Kde jsou údaje uloženy a kdo je zpracovává</h2>
+      <p>Část dat (záznamy, nastavení) je uložena přímo ve vašem zařízení. Údaje o účtu a synchronizovaná data jsou uloženy u našeho smluvního zpracovatele:</p>
+      <ul>
+        <li><strong>Supabase</strong> (Supabase, Inc.) — databáze, autentizace a úložiště souborů. Více na <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a>.</li>
+        <li>Při přihlášení přes <strong>Google</strong> nebo <strong>Apple</strong> zpracovávají tito poskytovatelé přihlašovací údaje podle svých vlastních zásad ochrany soukromí.</li>
+      </ul>
+      <p>Pokud dochází k předání údajů mimo Evropský hospodářský prostor, je zajištěno vhodnými zárukami podle kapitoly V GDPR (zejména standardními smluvními doložkami).</p>
 
-    <h2>7. Vaše práva</h2>
-    <p>Podle GDPR máte právo na:</p>
-    <ul>
-      <li>přístup ke svým údajům,</li>
-      <li>opravu nepřesných údajů,</li>
-      <li>výmaz („právo být zapomenut“) — účet můžete smazat přímo v aplikaci, viz <a href="delete-account.html">Smazání účtu</a>,</li>
-      <li>omezení zpracování a námitku proti zpracování,</li>
-      <li>přenositelnost údajů,</li>
-      <li>odvolání souhlasu, aniž by tím byla dotčena zákonnost dřívějšího zpracování,</li>
-      <li>podání stížnosti u dozorového úřadu — v ČR je jím <a href="https://uoou.gov.cz" rel="noopener">Úřad pro ochranu osobních údajů</a>.</li>
-    </ul>
-    <p>Pro uplatnění práv nás kontaktujte na <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a>. Odpovíme nejpozději do 30 dnů.</p>
+      <h2 id="doba">6. Doba uchování</h2>
+      <p>Údaje uchováváme po dobu existence vašeho účtu. Po smazání účtu jsou všechny vaše údaje (účet, záznamy, profilová fotografie) trvale odstraněny; ze záložních kopií zmizí nejpozději do 30 dnů. Data uložená pouze ve vašem zařízení odstraníte odinstalováním aplikace.</p>
 
-    <h2>8. Zabezpečení</h2>
-    <p>Veškerá komunikace mezi aplikací a serverem probíhá šifrovaně (HTTPS/TLS). Hesla jsou ukládána pouze v podobě kryptografického otisku. Přístup k datům je chráněn pravidly, která zajišťují, že ke svým záznamům máte přístup pouze vy.</p>
+      <h2 id="prava">7. Vaše práva</h2>
+      <p>Podle GDPR máte právo na:</p>
+      <ul>
+        <li>přístup ke svým údajům,</li>
+        <li>opravu nepřesných údajů,</li>
+        <li>výmaz („právo být zapomenut“) — účet můžete smazat přímo v aplikaci, viz <a href="delete-account.html">Smazání účtu</a>,</li>
+        <li>omezení zpracování a námitku proti zpracování,</li>
+        <li>přenositelnost údajů,</li>
+        <li>odvolání souhlasu, aniž by tím byla dotčena zákonnost dřívějšího zpracování,</li>
+        <li>podání stížnosti u dozorového úřadu — v ČR je jím <a href="https://uoou.gov.cz" rel="noopener">Úřad pro ochranu osobních údajů</a>.</li>
+      </ul>
+      <p>Pro uplatnění práv nás kontaktujte na <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a>. Odpovíme nejpozději do 30 dnů.</p>
 
-    <h2>9. Děti</h2>
-    <p>Aplikace není určena dětem mladším 13 let. Pokud je vám méně než 15 let, můžete aplikaci v České republice používat pouze se souhlasem zákonného zástupce (§ 7 zákona č. 110/2019 Sb.).</p>
+      <h2 id="zabezpeceni">8. Zabezpečení</h2>
+      <p>Veškerá komunikace mezi aplikací a serverem probíhá šifrovaně (HTTPS/TLS). Hesla jsou ukládána pouze v podobě kryptografického otisku. Přístup k datům je chráněn pravidly, která zajišťují, že ke svým záznamům máte přístup pouze vy.</p>
 
-    <h2>10. Upozornění</h2>
-    <p>Aplikace slouží k osobní reflexi a sledování nálad. Není zdravotnickým prostředkem a nenahrazuje odbornou lékařskou ani psychologickou péči.</p>
+      <h2 id="deti">9. Děti</h2>
+      <p>Aplikace není určena dětem mladším 13 let. Pokud je vám méně než 15 let, můžete aplikaci v České republice používat pouze se souhlasem zákonného zástupce (§ 7 zákona č. 110/2019 Sb.).</p>
 
-    <h2>11. Změny těchto zásad</h2>
-    <p>Zásady můžeme čas od času aktualizovat. O podstatných změnách vás budeme informovat v aplikaci nebo e‑mailem. Aktuální znění je vždy dostupné na této stránce.</p>
-  </main>
+      <h2 id="upozorneni">10. Upozornění</h2>
+      <p>Aplikace slouží k osobní reflexi a sledování nálad. Není zdravotnickým prostředkem a nenahrazuje odbornou lékařskou ani psychologickou péči.</p>
+
+      <h2 id="zmeny">11. Změny těchto zásad</h2>
+      <p>Zásady můžeme čas od času aktualizovat. O podstatných změnách vás budeme informovat v aplikaci nebo e‑mailem. Aktuální znění je vždy dostupné na této stránce.</p>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <nav>
-      <a href="index.html">Úvod</a>
-      <a href="terms.html">Podmínky užití</a>
-      <a href="support.html">Podpora</a>
-      <a href="delete-account.html">Smazání účtu</a>
-    </nav>
-    <p>© 2026 SoulQ</p>
+    <div class="inner">
+      <div class="about">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+        <p>Deník nálad pro každodenní péči o duševní pohodu. SoulQ nenahrazuje odbornou péči — v krizi volejte 116&nbsp;123 (nonstop, zdarma).</p>
+      </div>
+      <nav aria-label="Aplikace">
+        <h3>Aplikace</h3>
+        <ul>
+          <li><a href="support.html">Podpora a časté dotazy</a></li>
+          <li><a href="delete-account.html">Smazání účtu</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Právní informace">
+        <h3>Právní</h3>
+        <ul>
+          <li><a href="privacy.html">Ochrana osobních údajů</a></li>
+          <li><a href="terms.html">Podmínky užití</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© 2026 SoulQ</span>
+      <span><a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></span>
+    </div>
   </footer>
 </body>
 </html>

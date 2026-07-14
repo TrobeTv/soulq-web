@@ -5,112 +5,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — SoulQ</title>
   <meta name="description" content="Privacy policy of the SoulQ mobile app.">
-  <link rel="stylesheet" href="../assets/style.css">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="SoulQ logo">SoulQ</a>
-    <a class="lang-switch" href="../privacy.html">🇨🇿 Česky</a>
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="">SoulQ</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="support.html">Support</a>
+        <a href="terms.html" class="hide-sm">Terms of Use</a>
+        <a class="lang-switch" href="../privacy.html" lang="cs" hreflang="cs">CZ</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Privacy Policy</h1>
-    <p class="meta">Effective July 14, 2026 · Applies to the SoulQ mobile app (Android and iOS)</p>
+  <div class="doc-hero">
+    <div class="inner">
+      <p class="eyebrow">Legal document</p>
+      <h1>Privacy Policy</h1>
+      <p class="doc-meta"><span>Effective <b>July 14, 2026</b></span><span><b>SoulQ</b> app for Android and iOS</span></p>
+    </div>
+  </div>
 
-    <p>This policy describes what personal data the <strong>SoulQ</strong> mobile application (the "app") processes, for what purposes, for how long, and what rights you have. Processing complies with Regulation (EU) 2016/679 (GDPR).</p>
+  <div class="doc-layout">
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc-title">Contents</p>
+      <ol>
+        <li><a href="#controller">Data controller</a></li>
+        <li><a href="#data">What data we process</a></li>
+        <li><a href="#dont">What we don't do</a></li>
+        <li><a href="#basis">Legal basis</a></li>
+        <li><a href="#storage">Storage and processors</a></li>
+        <li><a href="#retention">Retention</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+        <li><a href="#changes">Changes</a></li>
+      </ol>
+    </nav>
 
-    <h2>1. Data Controller</h2>
-    <p>The data controller is the operator of the SoulQ app.<br>
-    Contact: <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></p>
+    <main class="doc">
+      <p>This policy describes what personal data the <strong>SoulQ</strong> mobile application (the "app") processes, for what purposes, for how long, and what rights you have. Processing complies with Regulation (EU) 2016/679 (GDPR).</p>
 
-    <h2>2. What data we process</h2>
-    <table>
-      <tr><th>Category</th><th>Data</th><th>Purpose</th></tr>
-      <tr>
-        <td>Account data</td>
-        <td>email address, password (stored only in a secured form), username, year of birth; when signing in with Google or Apple, also the identifier and name provided by those services</td>
-        <td>creating and managing your account, sign-in, password recovery, age-appropriate content</td>
-      </tr>
-      <tr>
-        <td>Profile photo</td>
-        <td>a photo you voluntarily upload</td>
-        <td>displaying it in your profile</td>
-      </tr>
-      <tr>
-        <td>Journal entries</td>
-        <td>recorded moods, feelings, their reasons and optional notes</td>
-        <td>providing the app's core feature — mood journaling, insights and statistics; sync and backup across devices</td>
-      </tr>
-      <tr>
-        <td>Technical data</td>
-        <td>device time zone, app settings (e.g. reminder time, theme)</td>
-        <td>correct scheduling of notifications and app functionality</td>
-      </tr>
-    </table>
+      <h2 id="controller">1. Data controller</h2>
+      <p>The data controller is the operator of the SoulQ app.<br>
+      Contact: <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></p>
 
-    <p>Mood and feeling entries may reveal information about your mental state. We therefore treat them with extra care: they are used <strong>exclusively</strong> to make the app work for you. We never use them for any other purpose, never analyze them for advertising, and never share them with anyone.</p>
+      <h2 id="data">2. What data we process</h2>
+      <table>
+        <thead>
+          <tr><th>Category</th><th>Data</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account data</td>
+            <td>email address, password (stored only in a secured form), username, year of birth; when signing in with Google or Apple, also the identifier and name provided by those services</td>
+            <td>creating and managing your account, sign-in, password recovery, age-appropriate content</td>
+          </tr>
+          <tr>
+            <td>Profile photo</td>
+            <td>a photo you voluntarily upload</td>
+            <td>displaying it in your profile</td>
+          </tr>
+          <tr>
+            <td>Journal entries</td>
+            <td>recorded moods, feelings, their reasons and optional notes</td>
+            <td>providing the app's core feature — mood journaling, insights and statistics; sync and backup across devices</td>
+          </tr>
+          <tr>
+            <td>Technical data</td>
+            <td>device time zone, app settings (e.g. reminder time, theme)</td>
+            <td>correct scheduling of notifications and app functionality</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h2>3. What we don't do</h2>
-    <ul>
-      <li>We show no ads and use no advertising or marketing tools.</li>
-      <li>We do not sell or rent your data to third parties.</li>
-      <li>We use no behavioral tracking (third-party analytics or trackers).</li>
-      <li>We do not track your location.</li>
-    </ul>
+      <p>Mood and feeling entries may reveal information about your mental state. We therefore treat them with extra care: they are used <strong>exclusively</strong> to make the app work for you. We never use them for any other purpose, never analyze them for advertising, and never share them with anyone.</p>
 
-    <h2>4. Legal basis</h2>
-    <ul>
-      <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR) — maintaining your account and providing the app's features.</li>
-      <li><strong>Consent</strong> (Art. 6(1)(a) and Art. 9(2)(a) GDPR) — voluntary recording of moods and feelings and uploading a profile photo. You may withdraw consent at any time by deleting your entries, photo, or the entire account.</li>
-      <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR) — securing the service and preventing abuse.</li>
-    </ul>
+      <h2 id="dont">3. What we don't do</h2>
+      <ul>
+        <li>We show no ads and use no advertising or marketing tools.</li>
+        <li>We do not sell or rent your data to third parties.</li>
+        <li>We use no behavioral tracking (third-party analytics or trackers).</li>
+        <li>We do not track your location.</li>
+      </ul>
 
-    <h2>5. Where data is stored and who processes it</h2>
-    <p>Some data (entries, settings) is stored directly on your device. Account data and synced data are stored with our contracted processor:</p>
-    <ul>
-      <li><strong>Supabase</strong> (Supabase, Inc.) — database, authentication and file storage. See <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a>.</li>
-      <li>When you sign in with <strong>Google</strong> or <strong>Apple</strong>, those providers process your sign-in data under their own privacy policies.</li>
-    </ul>
-    <p>Where data is transferred outside the European Economic Area, appropriate safeguards under Chapter V of the GDPR (in particular standard contractual clauses) are in place.</p>
+      <h2 id="basis">4. Legal basis</h2>
+      <ul>
+        <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR) — maintaining your account and providing the app's features.</li>
+        <li><strong>Consent</strong> (Art. 6(1)(a) and Art. 9(2)(a) GDPR) — voluntary recording of moods and feelings and uploading a profile photo. You may withdraw consent at any time by deleting your entries, photo, or the entire account.</li>
+        <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR) — securing the service and preventing abuse.</li>
+      </ul>
 
-    <h2>6. Retention</h2>
-    <p>We keep your data for as long as your account exists. After account deletion, all your data (account, entries, profile photo) is permanently removed; it disappears from backups within 30 days at the latest. Data stored only on your device is removed by uninstalling the app.</p>
+      <h2 id="storage">5. Where data is stored and who processes it</h2>
+      <p>Some data (entries, settings) is stored directly on your device. Account data and synced data are stored with our contracted processor:</p>
+      <ul>
+        <li><strong>Supabase</strong> (Supabase, Inc.) — database, authentication and file storage. See <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a>.</li>
+        <li>When you sign in with <strong>Google</strong> or <strong>Apple</strong>, those providers process your sign-in data under their own privacy policies.</li>
+      </ul>
+      <p>Where data is transferred outside the European Economic Area, appropriate safeguards under Chapter V of the GDPR (in particular standard contractual clauses) are in place.</p>
 
-    <h2>7. Your rights</h2>
-    <p>Under the GDPR you have the right to:</p>
-    <ul>
-      <li>access your data,</li>
-      <li>rectify inaccurate data,</li>
-      <li>erasure ("right to be forgotten") — you can delete your account directly in the app, see <a href="delete-account.html">Delete Account</a>,</li>
-      <li>restrict processing and object to processing,</li>
-      <li>data portability,</li>
-      <li>withdraw consent without affecting the lawfulness of prior processing,</li>
-      <li>lodge a complaint with a supervisory authority — in the Czech Republic the <a href="https://uoou.gov.cz" rel="noopener">Office for Personal Data Protection (ÚOOÚ)</a>.</li>
-    </ul>
-    <p>To exercise your rights, contact us at <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a>. We respond within 30 days at the latest.</p>
+      <h2 id="retention">6. Retention</h2>
+      <p>We keep your data for as long as your account exists. After account deletion, all your data (account, entries, profile photo) is permanently removed; it disappears from backups within 30 days at the latest. Data stored only on your device is removed by uninstalling the app.</p>
 
-    <h2>8. Security</h2>
-    <p>All communication between the app and the server is encrypted (HTTPS/TLS). Passwords are stored only as cryptographic hashes. Access to data is protected by rules ensuring that only you can access your entries.</p>
+      <h2 id="rights">7. Your rights</h2>
+      <p>Under the GDPR you have the right to:</p>
+      <ul>
+        <li>access your data,</li>
+        <li>rectify inaccurate data,</li>
+        <li>erasure ("right to be forgotten") — you can delete your account directly in the app, see <a href="delete-account.html">Delete Account</a>,</li>
+        <li>restrict processing and object to processing,</li>
+        <li>data portability,</li>
+        <li>withdraw consent without affecting the lawfulness of prior processing,</li>
+        <li>lodge a complaint with a supervisory authority — in the Czech Republic the <a href="https://uoou.gov.cz" rel="noopener">Office for Personal Data Protection (ÚOOÚ)</a>.</li>
+      </ul>
+      <p>To exercise your rights, contact us at <a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a>. We respond within 30 days at the latest.</p>
 
-    <h2>9. Children</h2>
-    <p>The app is not intended for children under 13. Users below the age of digital consent in their country may use the app only with the consent of a legal guardian.</p>
+      <h2 id="security">8. Security</h2>
+      <p>All communication between the app and the server is encrypted (HTTPS/TLS). Passwords are stored only as cryptographic hashes. Access to data is protected by rules ensuring that only you can access your entries.</p>
 
-    <h2>10. Disclaimer</h2>
-    <p>The app is intended for personal reflection and mood tracking. It is not a medical device and does not replace professional medical or psychological care.</p>
+      <h2 id="children">9. Children</h2>
+      <p>The app is not intended for children under 13. Users below the age of digital consent in their country may use the app only with the consent of a legal guardian.</p>
 
-    <h2>11. Changes to this policy</h2>
-    <p>We may update this policy from time to time. We will inform you about material changes in the app or by email. The current version is always available on this page.</p>
-  </main>
+      <h2 id="disclaimer">10. Disclaimer</h2>
+      <p>The app is intended for personal reflection and mood tracking. It is not a medical device and does not replace professional medical or psychological care.</p>
+
+      <h2 id="changes">11. Changes to this policy</h2>
+      <p>We may update this policy from time to time. We will inform you about material changes in the app or by email. The current version is always available on this page.</p>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="support.html">Support</a>
-      <a href="delete-account.html">Delete Account</a>
-    </nav>
-    <p>© 2026 SoulQ</p>
+    <div class="inner">
+      <div class="about">
+        <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="">SoulQ</a>
+        <p>A mood journal for everyday mental wellbeing. SoulQ does not replace professional care — if you are in crisis, contact a local crisis line or call 112 (EU emergency number).</p>
+      </div>
+      <nav aria-label="App">
+        <h3>App</h3>
+        <ul>
+          <li><a href="support.html">Support &amp; FAQ</a></li>
+          <li><a href="delete-account.html">Delete account</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© 2026 SoulQ</span>
+      <span><a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></span>
+    </div>
   </footer>
 </body>
 </html>

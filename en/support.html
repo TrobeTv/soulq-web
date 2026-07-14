@@ -5,57 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support — SoulQ</title>
   <meta name="description" content="Support and FAQ for the SoulQ app.">
-  <link rel="stylesheet" href="../assets/style.css">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="SoulQ logo">SoulQ</a>
-    <a class="lang-switch" href="../support.html">🇨🇿 Česky</a>
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="">SoulQ</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="privacy.html">Privacy</a>
+        <a href="delete-account.html" class="hide-sm">Delete account</a>
+        <a class="lang-switch" href="../support.html" lang="cs" hreflang="cs">CZ</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Support</h1>
-    <p class="meta">We're here for you — we usually reply within 2 business days.</p>
-
-    <div class="steps">
-      <p style="margin:0"><strong>Contact:</strong> <a href="mailto:ondra.srostlik@gmail.com?subject=SoulQ%20%E2%80%94%20support">ondra.srostlik@gmail.com</a><br>
-      Please include your phone model, OS version, and a description of the issue — it helps us respond faster.</p>
+  <div class="doc-hero">
+    <div class="inner">
+      <p class="eyebrow">Help with the app</p>
+      <h1>Support</h1>
+      <p class="doc-meta"><span>We usually reply within <b>2 business days</b></span></p>
     </div>
+  </div>
 
-    <h2>Frequently asked questions</h2>
+  <div class="doc-layout">
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#crisis">Urgent help</a></li>
+      </ol>
+    </nav>
 
-    <h3>I forgot my password. What now?</h3>
-    <p>On the sign-in screen, choose <em>Forgot password</em> and enter your email. We'll send you a link to set a new password. Check your spam folder too.</p>
+    <main class="doc">
+      <h2 id="contact" style="margin-top:0">Contact</h2>
+      <div class="contact-card">
+        <a class="mail" href="mailto:ondra.srostlik@gmail.com?subject=SoulQ%20%E2%80%94%20support">ondra.srostlik@gmail.com</a>
+        <p>Please include your phone model, OS version, and a description of the issue — it helps us respond faster.</p>
+      </div>
 
-    <h3>I didn't receive the confirmation email after signing up.</h3>
-    <p>Check your spam and junk folders. You can resend the confirmation email from the sign-in screen in the app.</p>
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="faq">
+        <details>
+          <summary>I forgot my password. What now?</summary>
+          <p>On the sign-in screen, choose <em>Forgot password</em> and enter your email. We'll send you a link to set a new password. Check your spam folder too.</p>
+        </details>
+        <details>
+          <summary>I didn't receive the confirmation email after signing up.</summary>
+          <p>Check your spam and junk folders. You can resend the confirmation email from the sign-in screen in the app.</p>
+        </details>
+        <details>
+          <summary>Reminders aren't arriving.</summary>
+          <p>Make sure SoulQ has notifications enabled in system settings and isn't restricted in the background (e.g. by battery saver). On Android 12+, you may also need to allow "Alarms &amp; reminders".</p>
+        </details>
+        <details>
+          <summary>Do my entries sync between devices?</summary>
+          <p>Yes — when you're signed in to your account, entries are automatically backed up and synced. The app keeps working offline and syncs once you're back online.</p>
+        </details>
+        <details>
+          <summary>How do I delete my account?</summary>
+          <p>Directly in the app: <em>Profile → Settings → Delete account</em>. See the <a href="delete-account.html">Delete Account</a> page for details, including deletion by email request.</p>
+        </details>
+        <details>
+          <summary>Are my entries private?</summary>
+          <p>Yes. Only you can see your entries, we show no ads, and we never sell your data. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </details>
+      </div>
 
-    <h3>Reminders aren't arriving.</h3>
-    <p>Make sure SoulQ has notifications enabled in system settings and isn't restricted in the background (e.g. by battery saver). On Android 12+, you may also need to allow "Alarms &amp; reminders".</p>
-
-    <h3>Do my entries sync between devices?</h3>
-    <p>Yes — when you're signed in to your account, entries are automatically backed up and synced. The app keeps working offline and syncs once you're back online.</p>
-
-    <h3>How do I delete my account?</h3>
-    <p>Directly in the app: <em>Profile → Settings → Delete account</em>. See the <a href="delete-account.html">Delete Account</a> page for details, including deletion by email request.</p>
-
-    <h3>Are my entries private?</h3>
-    <p>Yes. Only you can see your entries, we show no ads, and we never sell your data. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
-
-    <div class="notice">
-      <p style="margin:0"><strong>Need urgent help?</strong> SoulQ does not replace professional care. If you are in crisis, please contact a local crisis line, or call <strong>112</strong> (EU emergency number) if your life is in danger.</p>
-    </div>
-  </main>
+      <h2 id="crisis">Urgent help</h2>
+      <div class="notice">
+        <p><strong>Need urgent help?</strong> SoulQ does not replace professional care. If you are in crisis, please contact a local crisis line, or call <strong>112</strong> (EU emergency number) if your life is in danger.</p>
+      </div>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="delete-account.html">Delete Account</a>
-    </nav>
-    <p>© 2026 SoulQ</p>
+    <div class="inner">
+      <div class="about">
+        <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="">SoulQ</a>
+        <p>A mood journal for everyday mental wellbeing. SoulQ does not replace professional care — if you are in crisis, contact a local crisis line or call 112 (EU emergency number).</p>
+      </div>
+      <nav aria-label="App">
+        <h3>App</h3>
+        <ul>
+          <li><a href="support.html">Support &amp; FAQ</a></li>
+          <li><a href="delete-account.html">Delete account</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© 2026 SoulQ</span>
+      <span><a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></span>
+    </div>
   </footer>
 </body>
 </html>

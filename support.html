@@ -5,57 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Podpora — SoulQ</title>
   <meta name="description" content="Podpora a časté dotazy k aplikaci SoulQ.">
-  <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Logo SoulQ">SoulQ</a>
-    <a class="lang-switch" href="en/support.html">🇬🇧 English</a>
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+      <nav class="site-nav" aria-label="Hlavní navigace">
+        <a href="privacy.html">Ochrana údajů</a>
+        <a href="delete-account.html" class="hide-sm">Smazání účtu</a>
+        <a class="lang-switch" href="en/support.html" lang="en" hreflang="en">EN</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Podpora</h1>
-    <p class="meta">Jsme tu pro vás — obvykle odpovídáme do 2 pracovních dnů.</p>
-
-    <div class="steps">
-      <p style="margin:0"><strong>Kontakt:</strong> <a href="mailto:ondra.srostlik@gmail.com?subject=SoulQ%20%E2%80%94%20podpora">ondra.srostlik@gmail.com</a><br>
-      Do zprávy prosím uveďte model telefonu, verzi systému a popis problému — pomůže nám to odpovědět rychleji.</p>
+  <div class="doc-hero">
+    <div class="inner">
+      <p class="eyebrow">Pomoc s aplikací</p>
+      <h1>Podpora</h1>
+      <p class="doc-meta"><span>Odpovídáme obvykle do <b>2 pracovních dnů</b></span></p>
     </div>
+  </div>
 
-    <h2>Časté dotazy</h2>
+  <div class="doc-layout">
+    <nav class="toc" aria-label="Obsah stránky">
+      <p class="toc-title">Na této stránce</p>
+      <ol>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#faq">Časté dotazy</a></li>
+        <li><a href="#krize">Akutní pomoc</a></li>
+      </ol>
+    </nav>
 
-    <h3>Zapomněl(a) jsem heslo. Co teď?</h3>
-    <p>Na přihlašovací obrazovce zvolte <em>Zapomenuté heslo</em> a zadejte svůj e‑mail. Pošleme vám odkaz pro nastavení nového hesla. Zkontrolujte i složku se spamem.</p>
+    <main class="doc">
+      <h2 id="kontakt" style="margin-top:0">Kontakt</h2>
+      <div class="contact-card">
+        <a class="mail" href="mailto:ondra.srostlik@gmail.com?subject=SoulQ%20%E2%80%94%20podpora">ondra.srostlik@gmail.com</a>
+        <p>Do zprávy prosím uveďte model telefonu, verzi systému a popis problému — pomůže nám to odpovědět rychleji.</p>
+      </div>
 
-    <h3>Nepřišel mi potvrzovací e‑mail po registraci.</h3>
-    <p>Zkontrolujte spam a nevyžádanou poštu. V aplikaci lze potvrzovací e‑mail poslat znovu z přihlašovací obrazovky.</p>
+      <h2 id="faq">Časté dotazy</h2>
+      <div class="faq">
+        <details>
+          <summary>Zapomněl(a) jsem heslo. Co teď?</summary>
+          <p>Na přihlašovací obrazovce zvolte <em>Zapomenuté heslo</em> a zadejte svůj e‑mail. Pošleme vám odkaz pro nastavení nového hesla. Zkontrolujte i složku se spamem.</p>
+        </details>
+        <details>
+          <summary>Nepřišel mi potvrzovací e‑mail po registraci.</summary>
+          <p>Zkontrolujte spam a nevyžádanou poštu. V aplikaci lze potvrzovací e‑mail poslat znovu z přihlašovací obrazovky.</p>
+        </details>
+        <details>
+          <summary>Nechodí mi připomenutí.</summary>
+          <p>Zkontrolujte, že má SoulQ povolená oznámení v nastavení systému a že není omezena na pozadí (např. úsporou baterie). Na Androidu 12+ může být potřeba povolit také „Budíky a připomenutí“.</p>
+        </details>
+        <details>
+          <summary>Synchronizují se moje záznamy mezi zařízeními?</summary>
+          <p>Ano — když jste přihlášeni ke svému účtu, záznamy se automaticky zálohují a synchronizují. Bez připojení k internetu aplikace funguje dál a data se doplní po připojení.</p>
+        </details>
+        <details>
+          <summary>Jak smažu svůj účet?</summary>
+          <p>Přímo v aplikaci: <em>Profil → Nastavení → Smazat účet</em>. Podrobný postup včetně žádosti e‑mailem najdete na stránce <a href="delete-account.html">Smazání účtu</a>.</p>
+        </details>
+        <details>
+          <summary>Jsou moje záznamy soukromé?</summary>
+          <p>Ano. Vaše záznamy vidíte pouze vy, nezobrazujeme reklamy a data neprodáváme. Podrobnosti najdete v <a href="privacy.html">Zásadách ochrany osobních údajů</a>.</p>
+        </details>
+      </div>
 
-    <h3>Nechodí mi připomenutí.</h3>
-    <p>Zkontrolujte, že má SoulQ povolená oznámení v nastavení systému a že není omezena na pozadí (např. úsporou baterie). Na Androidu 12+ může být potřeba povolit také „Budíky a připomenutí“.</p>
-
-    <h3>Synchronizují se moje záznamy mezi zařízeními?</h3>
-    <p>Ano — když jste přihlášeni ke svému účtu, záznamy se automaticky zálohují a synchronizují. Bez připojení k internetu aplikace funguje dál a data se doplní po připojení.</p>
-
-    <h3>Jak smažu svůj účet?</h3>
-    <p>Přímo v aplikaci: <em>Profil → Nastavení → Smazat účet</em>. Podrobný postup včetně žádosti e‑mailem najdete na stránce <a href="delete-account.html">Smazání účtu</a>.</p>
-
-    <h3>Jsou moje záznamy soukromé?</h3>
-    <p>Ano. Vaše záznamy vidíte pouze vy, nezobrazujeme reklamy a data neprodáváme. Podrobnosti najdete v <a href="privacy.html">Zásadách ochrany osobních údajů</a>.</p>
-
-    <div class="notice">
-      <p style="margin:0"><strong>Potřebujete akutní pomoc?</strong> SoulQ nenahrazuje odbornou péči. Pokud procházíte krizí, zavolejte Linku první psychické pomoci <strong>116 123</strong> (nonstop, zdarma) nebo v ohrožení života <strong>112</strong>.</p>
-    </div>
-  </main>
+      <h2 id="krize">Akutní pomoc</h2>
+      <div class="notice">
+        <p><strong>Potřebujete akutní pomoc?</strong> SoulQ nenahrazuje odbornou péči. Pokud procházíte krizí, zavolejte Linku první psychické pomoci <strong>116 123</strong> (nonstop, zdarma) nebo v ohrožení života <strong>112</strong>.</p>
+      </div>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <nav>
-      <a href="index.html">Úvod</a>
-      <a href="privacy.html">Ochrana osobních údajů</a>
-      <a href="terms.html">Podmínky užití</a>
-      <a href="delete-account.html">Smazání účtu</a>
-    </nav>
-    <p>© 2026 SoulQ</p>
+    <div class="inner">
+      <div class="about">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+        <p>Deník nálad pro každodenní péči o duševní pohodu. SoulQ nenahrazuje odbornou péči — v krizi volejte 116&nbsp;123 (nonstop, zdarma).</p>
+      </div>
+      <nav aria-label="Aplikace">
+        <h3>Aplikace</h3>
+        <ul>
+          <li><a href="support.html">Podpora a časté dotazy</a></li>
+          <li><a href="delete-account.html">Smazání účtu</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Právní informace">
+        <h3>Právní</h3>
+        <ul>
+          <li><a href="privacy.html">Ochrana osobních údajů</a></li>
+          <li><a href="terms.html">Podmínky užití</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© 2026 SoulQ</span>
+      <span><a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></span>
+    </div>
   </footer>
 </body>
 </html>

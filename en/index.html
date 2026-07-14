@@ -3,58 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoulQ — mood journal &amp; wellbeing tracker</title>
-  <meta name="description" content="SoulQ is a mood-tracking app. Record how you feel, discover patterns, and take care of your mental wellbeing.">
-  <link rel="stylesheet" href="../assets/style.css">
+  <title>SoulQ — mood journal</title>
+  <meta name="description" content="SoulQ is a quiet mood journal. A few seconds a day — and over time you'll see what truly shapes your days.">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="SoulQ logo">SoulQ</a>
-    <a class="lang-switch" href="../index.html">🇨🇿 Česky</a>
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="">SoulQ</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="support.html">Support</a>
+        <a href="privacy.html" class="hide-sm">Privacy</a>
+        <a class="lang-switch" href="../index.html" lang="cs" hreflang="cs">CZ</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <img class="logo" src="../assets/logo.svg" alt="SoulQ logo">
-    <h1>SoulQ</h1>
-    <p class="tagline">A mood journal that helps you understand how you feel — and why.</p>
-    <div class="store-badges">
-      <span class="store-badge soon">Google Play — coming soon</span>
-      <span class="store-badge soon">App Store — coming soon</span>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Mood journal for Android and iOS</p>
+        <h1>How do you feel today<span class="dot">?</span></h1>
+        <p class="lead">SoulQ asks you this question every day. Answering takes a few seconds — and over time you'll see what truly shapes your days.</p>
+        <div class="store-badges">
+          <span class="store-badge soon"><span><small>Coming soon</small>Google&nbsp;Play</span></span>
+          <span class="store-badge soon"><span><small>Coming soon</small>App&nbsp;Store</span></span>
+        </div>
+        <p class="trust-line"><b>No ads</b> · <b>no data selling</b> · delete your account with one tap</p>
+      </div>
 
-  <section class="features">
-    <div class="feature">
-      <div class="icon">📝</div>
-      <h3>Quick check-ins</h3>
-      <p>Log your mood, feelings and their reasons in just a few seconds.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">📊</div>
-      <h3>Insights &amp; patterns</h3>
-      <p>Follow your journey over time and discover what shapes your mood.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🔔</div>
-      <h3>Gentle reminders</h3>
-      <p>Optional notifications remind you to take a moment for yourself.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🔒</div>
-      <h3>Your data is yours</h3>
-      <p>No ads, no data selling. Your entries stay private and you can delete your account anytime.</p>
-    </div>
-  </section>
+      <div class="phone" id="checkin" aria-label="Preview of the daily check-in in the SoulQ app">
+        <p class="greeting">Good evening</p>
+        <p class="question">How do you feel?</p>
+        <ul class="moods">
+          <li>
+            <button type="button" class="mood" data-mood="awful" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 10l2 -1M17 10l-2 -1M7 13a2 2 0 0 0 2 0M17 13a2 2 0 0 0 -2 0M8 18a4 4 0 0 1 8 0"/>
+                </svg>
+              </span>
+              <span class="label">Awful</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="bad" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 9l2 1M17 9l-2 1M9 17h6"/>
+                  <circle cx="8" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="16" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="label">Bad</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="okay" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 16.5h6"/>
+                  <circle cx="8" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="16" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="label">Okay</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="good" aria-pressed="true">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M8 15c1.5 2 4.5 2 8 0"/>
+                  <circle cx="8" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="16" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="label">Good</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="mood" data-mood="great" aria-pressed="false">
+              <span class="circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 12a2 2 0 0 1 3 0M15 12a2 2 0 0 1 3 0M7 16c2 2.5 6 2.5 10 0"/>
+                </svg>
+              </span>
+              <span class="label">Great</span>
+            </button>
+          </li>
+        </ul>
+        <p class="followup">Why do you feel <b data-slot>good</b>?</p>
+        <div class="chips" aria-hidden="true">
+          <span class="chip">family</span>
+          <span class="chip">work</span>
+          <span class="chip">sleep</span>
+          <span class="chip">exercise</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">What SoulQ does</p>
+      <h2>A small ritual, a big picture</h2>
+      <p class="section-lead">No long journal entries. Mood, reason, done — the app puts the rest together.</p>
+      <div class="features">
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </span>
+          <h3>Check in within seconds</h3>
+          <p>Pick a mood, add a reason and an optional note. Morning and evening check-ins fit into a coffee break.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+          </span>
+          <h3>Journey and patterns</h3>
+          <p>The Journey tab shows how your mood evolves over time and which reasons come up most often.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+          </span>
+          <h3>Reminders on your terms</h3>
+          <p>Optional notifications at times you choose. No spam — just a gentle "don't forget about yourself".</p>
+        </div>
+        <div class="feature">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </span>
+          <h3>Sync and backup</h3>
+          <p>With an account, your entries are safely backed up and available on all your devices. Everything keeps working offline.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="privacy-band">
+        <div>
+          <h2>Your moods belong to you</h2>
+          <p>Records of how you feel are the most personal thing on your phone. That's why SoulQ has no ads, no trackers, and no third-party analytics — and you can delete your account with all data anytime, right in the app.</p>
+          <a class="button" href="privacy.html">Read the privacy policy</a>
+        </div>
+        <ul>
+          <li>Data always encrypted in transit</li>
+          <li>We never sell or share your data</li>
+          <li>No location tracking</li>
+          <li>Account deletion with one tap</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <nav>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="support.html">Support</a>
-      <a href="delete-account.html">Delete Account</a>
-    </nav>
-    <p>© 2026 SoulQ. All rights reserved.</p>
+    <div class="inner">
+      <div class="about">
+        <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="">SoulQ</a>
+        <p>A mood journal for everyday mental wellbeing. SoulQ does not replace professional care — if you are in crisis, contact a local crisis line or call 112 (EU emergency number).</p>
+      </div>
+      <nav aria-label="App">
+        <h3>App</h3>
+        <ul>
+          <li><a href="support.html">Support &amp; FAQ</a></li>
+          <li><a href="delete-account.html">Delete account</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© 2026 SoulQ</span>
+      <span><a href="mailto:ondra.srostlik@gmail.com">ondra.srostlik@gmail.com</a></span>
+    </div>
   </footer>
+
+  <script>
+    (function () {
+      var moods = document.querySelectorAll('.mood');
+      var slot = document.querySelector('[data-slot]');
+      moods.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          moods.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+          btn.setAttribute('aria-pressed', 'true');
+          slot.textContent = btn.dataset.mood;
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
