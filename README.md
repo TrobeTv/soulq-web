@@ -41,8 +41,8 @@ Web musí být na **veřejné, trvalé URL** (Google nepřijímá PDF ani geogra
 
 ## Před publikací zkontrolovat / doplnit
 
-- [ ] **Právní identita správce** — v `privacy.html` a `terms.html` je zatím jen „provozovatel aplikace SoulQ" + e-mail. Pro plný soulad s GDPR doplňte jméno/firmu (příp. IČO a adresu) do sekce „Správce osobních údajů".
-- [ ] **Kontaktní e-mail** — na stránkách je `ondra.srostlik@gmail.com`. Pokud chcete doménový e-mail (např. `podpora@soulq.cz`), přepište ho na všech stránkách (`grep -rl "ondra.srostlik" .`).
+- [x] **Právní identita správce** — Mikuláš Báča (doplněno v privacy, terms i delete-account).
+- [x] **Kontaktní e-mail** — info@soulq.cz (na všech stránkách; schránka musí existovat a někdo ji musí číst).
 - [ ] **Region Supabase projektu** — pokud je projekt hostovaný mimo EU, věta o předávání dat mimo EHP v privacy policy platí; pokud je v EU, můžete ji upřesnit („data jsou uložena v EU").
 - [ ] **Odkazy na obchody** — na landing page jsou placeholdery „již brzy"; po publikaci nahraďte skutečnými odkazy na Play/App Store.
 - [ ] **Retence záloh (30 dnů)** — v privacy i delete-account je uvedeno max. 30 dnů; ověřte, že odpovídá nastavení záloh v Supabase.
