@@ -1,0 +1,225 @@
+/* SoulQ web — shared styles. Brand tokens match the app (lib/theme/app_colors.dart). */
+:root {
+  --primary: #047283;
+  --primary-dark: #035a68;
+  --gold: #ffc14a;
+  --cream: #fff7ed;
+  --bg: #f7ffff;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --max-width: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111121;
+    --surface: #1c1b29;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border: #2e2d3d;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--primary); }
+@media (prefers-color-scheme: dark) {
+  a { color: #4dbcce; }
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.brand img {
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0.3rem;
+  background: var(--primary);
+  border-radius: 0.6rem;
+}
+
+.lang-switch {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  white-space: nowrap;
+}
+
+.lang-switch:hover { border-color: var(--primary); }
+
+/* Content pages */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
+}
+
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 1.5rem 0 0.5rem; }
+h2 { font-size: 1.3rem; margin: 2.2rem 0 0.6rem; }
+h3 { font-size: 1.05rem; margin: 1.6rem 0 0.4rem; }
+
+.meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin: 1rem 0;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th { background: var(--surface); }
+
+ul, ol { padding-left: 1.4rem; }
+li { margin: 0.3rem 0; }
+
+.notice {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 0.5rem;
+  padding: 0.9rem 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.steps {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.2rem 1.4rem;
+  margin: 1.2rem 0;
+}
+
+/* Landing */
+.hero {
+  text-align: center;
+  padding: 3.5rem 1.5rem 3rem;
+}
+
+.hero img.logo {
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 1.1rem;
+  background: var(--primary);
+  border-radius: 1.6rem;
+  box-shadow: 0 12px 32px rgba(4, 114, 131, 0.35);
+}
+
+.hero h1 { font-size: 2.4rem; margin: 1.4rem 0 0.6rem; }
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.store-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.store-badge {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.6rem;
+  background: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.store-badge.soon {
+  background: var(--surface);
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  cursor: default;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  max-width: 52rem;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.feature {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 1.3rem;
+  text-align: left;
+}
+
+.feature .icon { font-size: 1.6rem; }
+.feature h3 { margin: 0.5rem 0 0.3rem; }
+.feature p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding: 1.8rem 1.5rem 2.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.site-footer nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.site-footer a { color: var(--text-muted); }
+.site-footer a:hover { color: var(--primary); }
