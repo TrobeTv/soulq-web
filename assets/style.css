@@ -62,6 +62,10 @@ h1, h2, h3 {
   margin: 0 0 0.9rem;
 }
 
+.hero .eyebrow {
+  font-size: 0.95rem;
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
