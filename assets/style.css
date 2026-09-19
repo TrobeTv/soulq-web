@@ -871,3 +871,355 @@ h3 {
     transition: none;
   }
 }
+
+/* ---------- Forms (beta feedback) ---------- */
+
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  padding: 1.8rem 1.7rem 1.6rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem 1.2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.field>label,
+.field>.field-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--teal-ink);
+}
+
+.field .optional {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.field .hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.field input:not([type="radio"]):not([type="checkbox"]),
+.field select,
+.field textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 0.98rem;
+  color: var(--text);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.field textarea {
+  min-height: 8.5rem;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+.field select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2.4rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23047283' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px rgba(4, 114, 131, 0.14);
+}
+
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: #c2410c;
+}
+
+/* Chips as radios */
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.choice {
+  position: relative;
+  cursor: pointer;
+}
+
+.choice input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+}
+
+.choice span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--teal-deep);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.42rem 0.95rem;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.choice span::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--mint);
+  border: 1px solid rgba(4, 114, 131, 0.35);
+}
+
+.choice:hover span {
+  border-color: var(--teal);
+}
+
+.choice input:checked+span {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+
+.choice input:checked+span::before {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.choice input:focus-visible+span {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+/* Rating — the app's check-in faces */
+
+.rating {
+  background: var(--app-dark);
+  border-radius: 20px;
+  padding: 1.1rem 1rem 0.95rem;
+}
+
+.rating .moods {
+  max-width: 24rem;
+  margin: 0 auto;
+}
+
+.rating .mood .label {
+  font-size: 0.7rem;
+}
+
+.rating .mood .circle {
+  width: 46px;
+  height: 46px;
+}
+
+.rating .mood svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Submit row */
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.4rem;
+  margin-top: 1.6rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--line);
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--teal-ink);
+  background: var(--gold);
+  border: none;
+  border-radius: 10px;
+  padding: 0.78rem 1.5rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  box-shadow: 0 8px 20px -10px rgba(255, 193, 74, 0.9);
+}
+
+.button-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px -10px rgba(255, 193, 74, 0.95);
+}
+
+.button-primary:disabled {
+  opacity: 0.6;
+  cursor: progress;
+  transform: none;
+}
+
+.form-actions .privacy-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0;
+  flex: 1 1 16rem;
+}
+
+.spinner {
+  width: 0.95rem;
+  height: 0.95rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-alert {
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.93rem;
+  line-height: 1.5;
+  margin: 0 0 1.2rem;
+}
+
+.form-alert.error {
+  background: #fff1ec;
+  color: #9a3412;
+  border: 1px solid #fed7c3;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Success state */
+
+.success-card {
+  background: var(--teal-deep);
+  color: #eaf6f4;
+  border-radius: calc(var(--radius) + 6px);
+  padding: 2.4rem 2.2rem;
+  margin: 1.4rem 0 2rem;
+  text-align: center;
+}
+
+.success-card .mark {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--teal-ink);
+  display: grid;
+  place-items: center;
+}
+
+.success-card .mark svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.success-card h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.success-card p {
+  color: #bfe0dc;
+  margin: 0 0 1.4rem;
+}
+
+.success-card .button-secondary {
+  display: inline-block;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.93rem;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.success-card .button-secondary:hover {
+  border-color: #fff;
+}
+
+/* Tips list on the beta page */
+
+.tips {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.tips li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  color: var(--text);
+}
+
+.tips li::before {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--gold);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 1.4rem 1.1rem 1.3rem;
+  }
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta testování — SoulQ</title>
+  <meta name="description" content="Formulář pro beta testery aplikace SoulQ — chyby, nápady a dojmy z testování.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+      <nav class="site-nav" aria-label="Hlavní navigace">
+        <a href="support.html">Podpora</a>
+        <a href="privacy.html" class="hide-sm">Ochrana údajů</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="doc-hero">
+    <div class="inner">
+      <p class="eyebrow">Beta testování</p>
+      <h1>Díky, že testuješ SoulQ<span style="color: var(--gold)">.</span></h1>
+      <p class="doc-meta"><span>Každý poznatek čteme — <b>chyby, nápady i dojmy</b></span><span>Vyplnění zabere <b>asi 2 minuty</b></span></p>
+    </div>
+  </div>
+
+  <div class="doc-layout">
+    <nav class="toc" aria-label="Obsah stránky">
+      <p class="toc-title">Na této stránce</p>
+      <ol>
+        <li><a href="#jak-na-to">Co nám pomáhá</a></li>
+        <li><a href="#formular">Formulář</a></li>
+        <li><a href="#kontakt">Jiná cesta</a></li>
+      </ol>
+    </nav>
+
+    <main class="doc">
+      <h2 id="jak-na-to" style="margin-top:0">Co nám nejvíc pomáhá</h2>
+      <p>Nemusíš psát dlouhé eseje. Nejcennější je konkrétní situace: co jsi dělal(a), co jsi čekal(a) a co se stalo místo toho.</p>
+      <ul class="tips">
+        <li>U chyby napiš, jak ji zopakovat — krok za krokem, klidně ve třech větách.</li>
+        <li>Nápady na vylepšení jsou vítané stejně jako chyby. Piš i to, co se ti líbí.</li>
+        <li>Jeden formulář = jeden poznatek. Když jich máš víc, pošli víc formulářů.</li>
+      </ul>
+
+      <h2 id="formular">Formulář</h2>
+
+      <div id="form-alert" class="form-alert error hidden" role="alert"></div>
+
+      <form id="beta-form" class="form-card" novalidate>
+        <div class="form-grid">
+          <div class="field full">
+            <span class="field-label" id="lbl-category">Typ poznatku</span>
+            <div class="chip-group" role="radiogroup" aria-labelledby="lbl-category">
+              <label class="choice"><input type="radio" name="category" value="bug" required><span>Chyba</span></label>
+              <label class="choice"><input type="radio" name="category" value="idea"><span>Nápad</span></label>
+              <label class="choice"><input type="radio" name="category" value="praise"><span>Líbí se mi</span></label>
+              <label class="choice"><input type="radio" name="category" value="other"><span>Něco jiného</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="field-label" id="lbl-platform">Platforma</span>
+            <div class="chip-group" role="radiogroup" aria-labelledby="lbl-platform">
+              <label class="choice"><input type="radio" name="platform" value="android" required><span>Android</span></label>
+              <label class="choice"><input type="radio" name="platform" value="ios"><span>iPhone</span></label>
+              <label class="choice"><input type="radio" name="platform" value="other"><span>Jiné</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="device">Telefon a verze systému <span class="optional">(nepovinné)</span></label>
+            <input id="device" name="device" type="text" maxlength="200" placeholder="např. Pixel 8, Android 15" autocomplete="off">
+          </div>
+
+          <div class="field">
+            <label for="screen">Kde v aplikaci <span class="optional">(nepovinné)</span></label>
+            <select id="screen" name="screen">
+              <option value="">Vyber obrazovku…</option>
+              <option value="home">Domů — denní záznam</option>
+              <option value="journey">Cesta — přehled a kalendář</option>
+              <option value="profile">Profil a nastavení</option>
+              <option value="auth">Přihlášení / registrace</option>
+              <option value="notifications">Připomenutí a notifikace</option>
+              <option value="sync">Synchronizace / offline</option>
+              <option value="other">Jinde / nevím</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="app-version">Verze aplikace <span class="optional">(nepovinné)</span></label>
+            <input id="app-version" name="app_version" type="text" maxlength="40" placeholder="Profil → Nastavení → dole" autocomplete="off">
+          </div>
+
+          <div class="field full">
+            <label for="description">Co se stalo, nebo co navrhuješ?</label>
+            <textarea id="description" name="description" required minlength="10" maxlength="4000" placeholder="Popiš situaci vlastními slovy. Co jsi dělal(a), co jsi čekal(a), co se stalo místo toho."></textarea>
+            <p class="hint"><span id="desc-count">0</span> / 4000 znaků</p>
+          </div>
+
+          <div class="field full">
+            <label for="steps">Jak to zopakovat <span class="optional">(nepovinné, hodí se u chyb)</span></label>
+            <textarea id="steps" name="steps" maxlength="4000" placeholder="1. Otevřu Cestu&#10;2. Přepnu na měsíc&#10;3. Kalendář zůstane prázdný" style="min-height: 7.5rem"></textarea>
+          </div>
+
+          <div class="field full">
+            <span class="field-label" id="lbl-rating">Jak se ti SoulQ zatím používá? <span class="optional">(nepovinné)</span></span>
+            <div class="rating" role="radiogroup" aria-labelledby="lbl-rating">
+              <ul class="moods">
+                <li>
+                  <button type="button" class="mood" data-rating="1" role="radio" aria-checked="false" aria-pressed="false">
+                    <span class="circle">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 10l2 -1M17 10l-2 -1M7 13a2 2 0 0 0 2 0M17 13a2 2 0 0 0 -2 0M8 18a4 4 0 0 1 8 0"/>
+                      </svg>
+                    </span>
+                    <span class="label">Strašně</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="mood" data-rating="2" role="radio" aria-checked="false" aria-pressed="false">
+                    <span class="circle">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 9l2 1M17 9l-2 1M9 17h6"/>
+                        <circle cx="8" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+                        <circle cx="16" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+                      </svg>
+                    </span>
+                    <span class="label">Špatně</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="mood" data-rating="3" role="radio" aria-checked="false" aria-pressed="false">
+                    <span class="circle">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 16.5h6"/>
+                        <circle cx="8" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                        <circle cx="16" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                      </svg>
+                    </span>
+                    <span class="label">Neutrálně</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="mood" data-rating="4" role="radio" aria-checked="false" aria-pressed="false">
+                    <span class="circle">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M8 15c1.5 2 4.5 2 8 0"/>
+                        <circle cx="8" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                        <circle cx="16" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                      </svg>
+                    </span>
+                    <span class="label">Dobře</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="mood" data-rating="5" role="radio" aria-checked="false" aria-pressed="false">
+                    <span class="circle">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 12a2 2 0 0 1 3 0M15 12a2 2 0 0 1 3 0M7 16c2 2.5 6 2.5 10 0"/>
+                      </svg>
+                    </span>
+                    <span class="label">Skvěle</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="name">Jméno nebo přezdívka <span class="optional">(nepovinné)</span></label>
+            <input id="name" name="name" type="text" maxlength="120" autocomplete="nickname">
+          </div>
+
+          <div class="field">
+            <label for="email">E‑mail <span class="optional">(nepovinné)</span></label>
+            <input id="email" name="email" type="email" maxlength="254" autocomplete="email" placeholder="Když se budeme chtít doptat">
+          </div>
+
+          <!-- Honeypot: skryté pole, které lidé nevyplní. Roboti ano. -->
+          <div class="field" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+            <label for="website">Web</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button id="submit" class="button-primary" type="submit">Odeslat poznatek</button>
+          <p class="privacy-note">Odesláním souhlasíš, že poznatek a případný e‑mail uložíme pro účely vývoje aplikace. Podrobnosti v <a href="privacy.html">Zásadách ochrany osobních údajů</a>.</p>
+        </div>
+      </form>
+
+      <div id="success" class="success-card hidden" role="status" aria-live="polite">
+        <span class="mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+        </span>
+        <h2>Máme to. Díky!</h2>
+        <p>Tvůj poznatek dorazil. Když bude potřeba, ozveme se na e‑mail, který jsi uvedl(a).</p>
+        <button id="again" class="button-secondary" type="button">Poslat další poznatek</button>
+      </div>
+
+      <h2 id="kontakt">Jiná cesta</h2>
+      <div class="contact-card">
+        <a class="mail" href="mailto:info@soulq.cz?subject=SoulQ%20beta%20%E2%80%94%20pozn%C3%A1mka">info@soulq.cz</a>
+        <p>Když se ti formulář nehodí — třeba chceš přiložit screenshot nebo video — napiš rovnou e‑mail.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="about">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+        <p>Tvůj vnitřní kompas pro poznání sebe sama. SoulQ nenahrazuje odbornou péči — v krizi volejte 116&nbsp;123 (nonstop, zdarma).</p>
+      </div>
+      <nav aria-label="Aplikace">
+        <h3>Aplikace</h3>
+        <ul>
+          <li><a href="support.html">Podpora a časté dotazy</a></li>
+          <li><a href="delete-account.html">Smazání účtu</a></li>
+          <li><a href="beta.html">Beta testování</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Právní informace">
+        <h3>Právní</h3>
+        <ul>
+          <li><a href="privacy.html">Ochrana osobních údajů</a></li>
+          <li><a href="terms.html">Podmínky užití</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© 2026 SoulQ</span>
+      <span><a href="mailto:info@soulq.cz">info@soulq.cz</a></span>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+
+    // Anon key je veřejný — tabulka beta_feedback nemá žádnou RLS policy,
+    // zápis jde jen přes RPC submit_beta_feedback, která vstup validuje.
+    const SUPABASE_URL = "https://mtyjxasthlbukolfkupa.supabase.co";
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im10eWp4YXN0aGxidWtvbGZrdXBhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyNTAxNjEsImV4cCI6MjA5MTgyNjE2MX0.SHRv79B02LNaSekgBnVmtLPPSZO8f-8n3kPkA4o4SFM";
+
+    const DESCRIPTION_MIN = 10;
+    const DESCRIPTION_MAX = 4000;
+    const SUBMIT_LABEL = "Odeslat poznatek";
+
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: { persistSession: false, autoRefreshToken: false },
+    });
+
+    const $ = (id) => document.getElementById(id);
+    const form = $("beta-form");
+    const alertEl = $("form-alert");
+    const successEl = $("success");
+    const submitBtn = $("submit");
+    const descEl = $("description");
+    const countEl = $("desc-count");
+    const ratingButtons = Array.from(document.querySelectorAll(".rating .mood"));
+
+    let selectedRating = null;
+
+    // --- Hodnocení: stejné „obličeje" jako v aplikaci, chová se jako radio ---
+    ratingButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const value = Number(btn.dataset.rating);
+        selectedRating = selectedRating === value ? null : value;
+        ratingButtons.forEach((b) => {
+          const on = Number(b.dataset.rating) === selectedRating;
+          b.setAttribute("aria-pressed", String(on));
+          b.setAttribute("aria-checked", String(on));
+        });
+      });
+    });
+
+    descEl.addEventListener("input", () => {
+      countEl.textContent = String(descEl.value.length);
+    });
+
+    function showError(message) {
+      alertEl.textContent = message;
+      alertEl.classList.remove("hidden");
+      alertEl.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+
+    function clearError() {
+      alertEl.classList.add("hidden");
+      alertEl.textContent = "";
+      form.querySelectorAll("[aria-invalid]").forEach((el) => el.removeAttribute("aria-invalid"));
+    }
+
+    function setLoading(on) {
+      submitBtn.disabled = on;
+      submitBtn.innerHTML = on ? '<span class="spinner" aria-hidden="true"></span>Odesílám…' : SUBMIT_LABEL;
+    }
+
+    function readForm() {
+      const data = new FormData(form);
+      const text = (key) => String(data.get(key) ?? "").trim();
+      return {
+        category: text("category"),
+        platform: text("platform"),
+        device: text("device"),
+        screen: text("screen"),
+        appVersion: text("app_version"),
+        description: text("description"),
+        steps: text("steps"),
+        name: text("name"),
+        email: text("email"),
+        honeypot: text("website"),
+      };
+    }
+
+    function validate(values) {
+      if (!values.category) return "Vyber prosím typ poznatku.";
+      if (!values.platform) return "Vyber prosím platformu.";
+      if (values.description.length < DESCRIPTION_MIN) {
+        descEl.setAttribute("aria-invalid", "true");
+        return `Popiš prosím poznatek alespoň ${DESCRIPTION_MIN} znaky.`;
+      }
+      if (values.description.length > DESCRIPTION_MAX) {
+        descEl.setAttribute("aria-invalid", "true");
+        return `Popis je moc dlouhý (max. ${DESCRIPTION_MAX} znaků).`;
+      }
+      if (values.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(values.email)) {
+        $("email").setAttribute("aria-invalid", "true");
+        return "E‑mail nevypadá správně. Zkontroluj ho, nebo ho nech prázdný.";
+      }
+      return null;
+    }
+
+    function toRpcParams(values) {
+      const orNull = (s) => (s ? s : null);
+      return {
+        p_platform: values.platform,
+        p_category: values.category,
+        p_description: values.description,
+        p_name: orNull(values.name),
+        p_email: orNull(values.email),
+        p_device: orNull(values.device),
+        p_app_version: orNull(values.appVersion),
+        p_screen: orNull(values.screen),
+        p_rating: selectedRating,
+        p_steps: orNull(values.steps),
+        p_user_agent: navigator.userAgent,
+      };
+    }
+
+    function friendlyError(err) {
+      const msg = err?.message ?? "";
+      if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) {
+        return "Nepodařilo se připojit. Zkontroluj internet a zkus to znovu — text ve formuláři zůstává.";
+      }
+      if (/function .* does not exist|schema cache/i.test(msg)) {
+        return "Formulář ještě není na serveru zapnutý. Napiš nám prosím na info@soulq.cz.";
+      }
+      return msg || "Odeslání se nepovedlo. Zkus to prosím znovu, nebo napiš na info@soulq.cz.";
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      clearError();
+
+      const values = readForm();
+      if (values.honeypot) {
+        // Bot: tvař se, že prošlo, ale nic neposílej.
+        showSuccess();
+        return;
+      }
+      const problem = validate(values);
+      if (problem) return showError(problem);
+
+      setLoading(true);
+      try {
+        const { error } = await supabase.rpc("submit_beta_feedback", toRpcParams(values));
+        if (error) throw error;
+        showSuccess();
+      } catch (err) {
+        console.error("[beta-form] submit failed", err);
+        showError(friendlyError(err));
+      } finally {
+        setLoading(false);
+      }
+    });
+
+    function showSuccess() {
+      form.classList.add("hidden");
+      successEl.classList.remove("hidden");
+      successEl.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+
+    $("again").addEventListener("click", () => {
+      form.reset();
+      selectedRating = null;
+      ratingButtons.forEach((b) => {
+        b.setAttribute("aria-pressed", "false");
+        b.setAttribute("aria-checked", "false");
+      });
+      countEl.textContent = "0";
+      successEl.classList.add("hidden");
+      form.classList.remove("hidden");
+      form.scrollIntoView({ block: "start", behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
