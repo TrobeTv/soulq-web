@@ -1298,6 +1298,8 @@ a.button-primary:hover {
 .button-outline {
   display: inline-flex;
   align-items: center;
+  gap: 0.55rem;
+  line-height: 1.35;
   font-weight: 700;
   font-size: 0.98rem;
   color: var(--teal);
@@ -1314,13 +1316,43 @@ a.button-primary:hover {
   color: #fff;
 }
 
+.button-outline svg {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.download-card {
+  background: var(--mint);
+  border-radius: calc(var(--radius) + 4px);
+  padding: 1.6rem 1.7rem 1.4rem;
+  margin: 2rem 0;
+  scroll-margin-top: 5rem;
+}
+
+.download-card h2 {
+  margin: 0 0 0.4rem;
+  padding-top: 0;
+}
+
+.download-card p {
+  margin: 0 0 1.2rem;
+  color: var(--teal-deep);
+}
+
+.download-card .file-meta {
+  font-size: 0.82rem;
+  margin: 0.85rem 0 0;
+}
+
 .closing-line {
   font-weight: 700;
   color: var(--teal);
 }
 
 @media (max-width: 640px) {
-  .step-card {
+  .step-card,
+  .download-card {
     padding: 1.4rem 1.1rem 1.3rem;
   }
 }
