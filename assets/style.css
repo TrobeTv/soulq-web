@@ -222,6 +222,23 @@ h3 {
   text-transform: uppercase;
 }
 
+a.store-badge {
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+a.store-badge:hover,
+a.store-badge:focus-visible {
+  background: var(--teal-deep);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.store-badge .badge-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: none;
+}
+
 .store-badge.soon {
   background: var(--surface);
   color: var(--muted);
@@ -496,6 +513,120 @@ h3 {
   .privacy-band {
     grid-template-columns: 1fr;
     padding: 2.2rem 1.6rem;
+  }
+}
+
+/* ---------- Story (landing) ---------- */
+
+.story {
+  padding-top: 1rem;
+}
+
+.story-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 6px);
+  padding: 3rem 2.8rem;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.story-aside {
+  position: sticky;
+  top: 5.5rem;
+}
+
+.story-aside h2 {
+  font-size: 1.75rem;
+  margin: 0 0 0.8rem;
+}
+
+.story-aside .dot,
+.story-signature .dot {
+  color: var(--gold);
+}
+
+.story-note {
+  color: var(--muted);
+  max-width: 20rem;
+  margin: 0;
+}
+
+.story-body {
+  max-width: 36rem;
+}
+
+.story-body p {
+  margin: 0 0 1.1rem;
+}
+
+.story-body .story-opening {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  color: var(--teal-ink);
+  margin-bottom: 1.3rem;
+}
+
+.story-questions {
+  list-style: none;
+  margin: 0.2rem 0 1.4rem;
+  padding: 1.1rem 1.4rem;
+  background: var(--mint);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  display: grid;
+  gap: 0.3rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--teal-deep);
+}
+
+.story-body .story-turn {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--teal);
+  margin: 1.6rem 0 1.1rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.story-body .story-signature {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: var(--teal-ink);
+  margin: 1.8rem 0 0;
+}
+
+.story-signature small {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 860px) {
+  .story-card {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    padding: 2.2rem 1.6rem;
+  }
+
+  .story-aside {
+    position: static;
+  }
+
+  .story-body {
+    max-width: none;
   }
 }
 
