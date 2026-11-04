@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zásady ochrany osobních údajů — SoulQ</title>
-  <meta name="description" content="Zásady ochrany osobních údajů mobilní aplikace SoulQ.">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="description" content="Zásady ochrany osobních údajů aplikace SoulQ (verze 2.0, účinné od 5. 11. 2026).">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -14,10 +16,10 @@
 <body>
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>SoulQ<span class="dot">.</span></span></a>
       <nav class="site-nav" aria-label="Hlavní navigace">
         <a href="support.html">Podpora</a>
-        <a href="terms.html" class="hide-sm">Podmínky užití</a>
+        <a href="terms.html" class="hide-sm">Podmínky použití</a>
         <a class="lang-switch" href="en/privacy.html" lang="en" hreflang="en">EN</a>
       </nav>
     </div>
@@ -26,8 +28,8 @@
   <div class="doc-hero">
     <div class="inner">
       <p class="eyebrow">Právní dokument</p>
-      <h1>Zásady ochrany osobních údajů</h1>
-      <p class="doc-meta"><span>Platné od <b>14. 7. 2026</b></span><span>Aplikace <b>SoulQ</b> pro Android a iOS</span></p>
+      <h1>Zásady ochrany osobních údajů SoulQ</h1>
+      <p class="doc-meta"><span>Verze <b>2.0</b></span><span>Účinnost od <b>5. 11. 2026</b></span><span>Poslední aktualizace <b>4. 11. 2026</b></span></p>
     </div>
   </div>
 
@@ -35,115 +37,205 @@
     <nav class="toc" aria-label="Obsah dokumentu">
       <p class="toc-title">Obsah</p>
       <ol>
-        <li><a href="#spravce">Správce osobních údajů</a></li>
+        <li><a href="#spravce">Kdo je správcem</a></li>
+        <li><a href="#rozsah">Na koho a na co se zásady vztahují</a></li>
+        <li><a href="#jak-funguje">Jak SoulQ funguje</a></li>
         <li><a href="#udaje">Jaké údaje zpracováváme</a></li>
-        <li><a href="#nedelame">Co neděláme</a></li>
-        <li><a href="#zaklad">Právní základ</a></li>
-        <li><a href="#ulozeni">Uložení a zpracovatelé</a></li>
-        <li><a href="#doba">Doba uchování</a></li>
-        <li><a href="#prava">Vaše práva</a></li>
-        <li><a href="#zabezpeceni">Zabezpečení</a></li>
+        <li><a href="#ucely">Účely a právní základy</a></li>
+        <li><a href="#souhlas">Výslovný souhlas se zvláštními kategoriemi</a></li>
+        <li><a href="#ai">Automatizované rozhodování a AI</a></li>
+        <li><a href="#prijemci">Příjemci a poskytovatelé</a></li>
+        <li><a href="#ehp">Předávání mimo EHP</a></li>
+        <li><a href="#zabezpeceni">Uložení a zabezpečení</a></li>
+        <li><a href="#uchovani">Doby uchování</a></li>
+        <li><a href="#smazani">Smazání účtu a jednotlivých údajů</a></li>
+        <li><a href="#odvolani">Dopad odvolání čl. 9 souhlasu</a></li>
+        <li><a href="#prava">Práva uživatele</a></li>
         <li><a href="#deti">Děti</a></li>
-        <li><a href="#upozorneni">Upozornění</a></li>
         <li><a href="#zmeny">Změny zásad</a></li>
+        <li><a href="#urad">Dozorový úřad</a></li>
       </ol>
     </nav>
 
     <main class="doc">
-      <p>Tyto zásady popisují, jaké osobní údaje zpracovává mobilní aplikace <strong>SoulQ</strong> (dále jen „aplikace“), za jakým účelem, jak dlouho a jaká máte v souvislosti s tím práva. Zpracování probíhá v souladu s nařízením (EU) 2016/679 (GDPR).</p>
+      <h2 id="spravce">1. Kdo je správcem</h2>
+      <p>Správcem osobních údajů zpracovávaných prostřednictvím aplikace SoulQ je:</p>
+      <p>Mgr. Mikuláš Báča, MBA<br>
+      Náměstí Vítězství 149<br>
+      685 01 Bučovice<br>
+      Česká republika<br>
+      IČO: není přiděleno<br>
+      E‑mail: <a href="mailto:info@soulq.cz">info@soulq.cz</a><br>
+      Kontakt pro ochranu osobních údajů: <a href="mailto:info@soulq.cz">info@soulq.cz</a></p>
+      <p>Dále jen „SoulQ“, „správce“ nebo „my“.</p>
 
-      <h2 id="spravce">1. Správce osobních údajů</h2>
-      <p>Správcem osobních údajů je Mikuláš Báča.<br>
-      Kontakt: <a href="mailto:info@soulq.cz">info@soulq.cz</a></p>
+      <h2 id="rozsah">2. Na koho a na co se zásady vztahují</h2>
+      <p>Tyto zásady se vztahují na uživatele aplikace SoulQ a na související webové, podpůrné a komunikační procesy. SoulQ se z rozhodnutí provozovatele neposkytuje osobám mladším 16 let. Jde o produktovou věkovou hranici provozovatele; tím nejsou nahrazena pravidla čl. 8 GDPR pro případy, kdy by byla služba nabízena dětem na základě souhlasu.</p>
 
-      <h2 id="udaje">2. Jaké údaje zpracováváme</h2>
+      <h2 id="jak-funguje">3. Jak SoulQ funguje</h2>
+      <p>SoulQ je spotřebitelská aplikace určená pro osobní reflexi a podporu osobní pohody. Umožňuje zaznamenávat subjektivní náladu, kvalitu spánku, související okolnosti a volitelné osobní poznámky a zobrazovat přehledy založené na vlastních záznamech uživatele.</p>
+      <p>SoulQ není podle svého současného určeného účelu poskytována jako zdravotnický prostředek. Není určena k diagnostice, prevenci, monitorování, predikci, prognóze, léčbě ani zmírňování onemocnění nebo zdravotního postižení. Neposkytuje zdravotní, psychologické, psychoterapeutické ani krizové služby.</p>
+
+      <h2 id="udaje">4. Jaké údaje zpracováváme</h2>
+      <h3>4.1 Účet a přihlášení</h3>
+      <ul>
+        <li>e‑mailová adresa, interní identifikátor účtu a uživatelské jméno;</li>
+        <li>údaje nezbytné pro autentizaci, způsob přihlášení, čas vytvoření účtu a přihlášení;</li>
+        <li>záznam o přijetí konkrétní verze Podmínek použití;</li>
+        <li>při Google Sign‑In údaje poskytnuté poskytovatelem identity v rozsahu zvoleném uživatelem;</li>
+        <li>při Sign in with Apple údaje poskytnuté při autorizaci, včetně případné relay e‑mailové adresy.</li>
+      </ul>
+      <h3>4.2 Profil</h3>
+      <ul>
+        <li>rok narození;</li>
+        <li>volitelně jméno, příjmení, pohlaví a profilová fotografie.</li>
+      </ul>
+      <h3>4.3 Osobní záznamy</h3>
+      <ul>
+        <li>skóre a typ nálady, důvody nebo štítky a datum a čas;</li>
+        <li>subjektivní hodnocení kvality spánku a související důvody;</li>
+        <li>volitelná osobní nebo deníková poznámka;</li>
+        <li>synchronizační metadata nezbytná k poskytování funkce.</li>
+      </ul>
+      <p>Osobní záznamy mohou obsahovat také informace týkající se fyzického nebo duševního zdraví, pokud je uživatel do SoulQ sám zadá. Takové údaje mohou představovat údaje o zdravotním stavu nebo jiné zvláštní kategorie osobních údajů ve smyslu čl. 9 GDPR. SoulQ z těchto údajů neurčuje diagnózu ani neposuzuje zdravotní nebo psychický stav uživatele.</p>
+      <h3>4.4 Bezpečnostní a technické údaje</h3>
+      <ul>
+        <li>IP adresa, čas a typ autentizační události;</li>
+        <li>bezpečnostní a provozní metadata nezbytná k ochraně účtu a služby;</li>
+        <li>údaje obsažené v podpoře, žádostech o práva a zpětné vazbě.</li>
+      </ul>
+
+      <h2 id="ucely">5. Účely a právní základy</h2>
       <table>
         <thead>
-          <tr><th>Kategorie</th><th>Údaje</th><th>Účel</th></tr>
+          <tr><th>Účel</th><th>Údaje</th><th>Čl. 6 GDPR</th><th>Čl. 9 GDPR</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td>Údaje o účtu</td>
-            <td>e‑mailová adresa, heslo (uloženo pouze v zabezpečené podobě), uživatelské jméno, rok narození; při přihlášení přes Google nebo Apple také identifikátor a jméno poskytnuté těmito službami</td>
-            <td>vytvoření a správa účtu, přihlášení, obnova hesla, přizpůsobení obsahu podle věku</td>
+            <td>Založení, správa a autentizace účtu</td>
+            <td>účet, e‑mail, ID, autentizace</td>
+            <td>čl. 6 odst. 1 písm. b), plnění smlouvy</td>
+            <td>neuplatní se</td>
           </tr>
           <tr>
-            <td>Profilová fotografie</td>
-            <td>fotografie, kterou si sami dobrovolně nahrajete</td>
-            <td>zobrazení ve vašem profilu</td>
+            <td>Poskytování funkcí záznamů a přehledů</td>
+            <td>nálada, spánek, poznámky, metadata</td>
+            <td>čl. 6 odst. 1 písm. b), plnění smlouvy</td>
+            <td>pokud jde o zvláštní kategorii, čl. 9 odst. 2 písm. a), výslovný souhlas</td>
           </tr>
           <tr>
-            <td>Vaše záznamy</td>
-            <td>zaznamenané pocity a prožitky, jejich důvody a případné poznámky</td>
-            <td>poskytování hlavní funkce aplikace — zaznamenávání pocitů a objevování souvislostí, přehledy a statistiky; synchronizace a záloha mezi zařízeními</td>
+            <td>Volitelná personalizace profilu</td>
+            <td>volitelné profilové údaje</td>
+            <td>čl. 6 odst. 1 písm. b), pokud je údaj uživatelem zvolen pro funkci profilu</td>
+            <td>podle obsahu; citlivé volné údaje nejsou vyžadovány</td>
           </tr>
           <tr>
-            <td>Technické údaje</td>
-            <td>časové pásmo zařízení, nastavení aplikace (např. čas připomenutí, motiv)</td>
-            <td>správné plánování upozornění a fungování aplikace</td>
+            <td>Bezpečnost a prevence zneužití</td>
+            <td>IP, auth a bezpečnostní metadata</td>
+            <td>čl. 6 odst. 1 písm. f), oprávněný zájem na ochraně služby a uživatelů</td>
+            <td>neuplatní se</td>
+          </tr>
+          <tr>
+            <td>Evidence právních úkonů</td>
+            <td>verze, čas, typ úkonu, pseudonymní ID</td>
+            <td>čl. 6 odst. 1 písm. c) a f), podle konkrétní evidence</td>
+            <td>čl. 9 odst. 2 písm. a) u důkazu výslovného souhlasu</td>
+          </tr>
+          <tr>
+            <td>Vyřízení práv a komunikace</td>
+            <td>žádost, identifikace, komunikace</td>
+            <td>čl. 6 odst. 1 písm. c); případně f) pro ochranu nároků</td>
+            <td>podle obsahu žádosti</td>
+          </tr>
+          <tr>
+            <td>Beta a produktová zpětná vazba</td>
+            <td>obsah formuláře, volitelný kontakt, technické údaje</td>
+            <td>čl. 6 odst. 1 písm. f), vývoj a bezpečnost produktu</td>
+            <td>uživatel nemá vkládat zdravotní ani deníkové údaje</td>
           </tr>
         </tbody>
       </table>
+      <p>Oprávněné zájmy jsou uplatňovány pouze v rozsahu, v němž nad nimi nepřevažují práva a svobody uživatele. Uživatel může proti takovému zpracování vznést námitku.</p>
 
-      <p>Záznamy o pocitech a prožitcích mohou vypovídat o vašem duševním rozpoložení. Zacházíme s nimi proto se zvýšenou péčí: slouží <strong>výhradně</strong> k tomu, aby vám aplikace fungovala, a nikdy je nevyužíváme k jinému účelu, neanalyzujeme je pro reklamu ani je nikomu nepředáváme.</p>
+      <h2 id="souhlas">6. Výslovný souhlas se zvláštními kategoriemi</h2>
+      <p>Před prvním zpracováním osobních záznamů, které mohou podle obsahu představovat zvláštní kategorie osobních údajů, získává SoulQ oddělený výslovný souhlas podle čl. 9 odst. 2 písm. a) GDPR. Souhlas není součástí přijetí Podmínek použití a není předem zaškrtnutý.</p>
+      <p>Souhlas lze kdykoli odvolat přímo v aplikaci v <strong>Profil → Nastavení → Soukromí → Odvolat souhlas</strong> nebo e‑mailem na <a href="mailto:info@soulq.cz">info@soulq.cz</a>. Odvolání souhlasu je stejně snadné jako jeho udělení a nemá vliv na zákonnost zpracování založeného na souhlasu před jeho odvoláním. Po odvolání se bez zbytečného odkladu zastaví další zpracování osobních údajů založené na tomto souhlasu. Další nakládání s již uloženými údaji se řídí <a href="#odvolani">částí 13</a> těchto zásad.</p>
 
-      <h2 id="nedelame">3. Co neděláme</h2>
+      <h2 id="ai">7. Automatizované rozhodování a AI</h2>
+      <p>Podle dostupných technických podkladů současná verze neodesílá osobní záznamy externí službě umělé inteligence. Přehledy jsou vytvářeny deterministickou logikou v zařízení. SoulQ neprovádí rozhodování založené výhradně na automatizovaném zpracování s právním nebo obdobně významným účinkem podle čl. 22 GDPR.</p>
+
+      <h2 id="prijemci">8. Příjemci a poskytovatelé</h2>
       <ul>
-        <li>Nezobrazujeme reklamy a nepoužíváme reklamní ani marketingové nástroje.</li>
-        <li>Neprodáváme ani nepronajímáme vaše údaje třetím stranám.</li>
-        <li>Nepoužíváme nástroje pro sledování chování (analytics, trackery třetích stran).</li>
-        <li>Nesledujeme vaši polohu.</li>
+        <li><strong>Supabase:</strong> cloudová databáze PostgreSQL, autentizace a Storage v regionu Frankfurt, eu‑central‑1.</li>
+        <li><strong>Google a Apple:</strong> pouze u zvoleného přihlášení, v rozsahu autentizace.</li>
+        <li><strong>Resend:</strong> služba používaná pro technické doručení zpráv z beta zpětné vazby do e‑mailové schránky SoulQ, pokud je tato funkce aktivní.</li>
+        <li><strong>Google Workspace:</strong> e‑mailové schránky info@soulq.cz a admin@soulq.cz.</li>
       </ul>
+      <p>Tito poskytovatelé získávají přístup k osobním údajům pouze v rozsahu nezbytném pro poskytování příslušných služeb. Jejich vlastní zpracování osobních údajů se může řídit také jejich podmínkami a zásadami ochrany osobních údajů.</p>
 
-      <h2 id="zaklad">4. Právní základ zpracování</h2>
+      <h2 id="ehp">9. Předávání mimo EHP</h2>
+      <p>Někteří poskytovatelé služeb nebo jejich další zpracovatelé mohou zpracovávat osobní údaje také mimo Evropský hospodářský prostor. V takovém případě zajistíme, aby předávání probíhalo v souladu s kapitolou V GDPR, zejména na základě rozhodnutí Evropské komise o odpovídající úrovni ochrany, EU‑US Data Privacy Framework u příjemce, na kterého se vztahuje, nebo standardních smluvních doložek schválených Evropskou komisí, případně s využitím dalších opatření vyžadovaných použitelnými právními předpisy.</p>
+
+      <h2 id="zabezpeceni">10. Uložení a zabezpečení</h2>
+      <p>SoulQ používá přiměřená technická a organizační opatření k ochraně osobních údajů před neoprávněným přístupem, ztrátou, změnou nebo zpřístupněním. Serverová data jsou uložena prostřednictvím Supabase, přičemž hlavní databázový projekt SoulQ je provozován v regionu Frankfurt (eu‑central‑1). Přístup k uloženým údajům je řízen přístupovými pravidly a profilové fotografie jsou ukládány v neveřejném úložišti. Lokální databáze aplikace je v podporované verzi šifrována prostřednictvím SQLCipher s využitím bezpečného úložiště klíče zařízení. Bezpečnostní opatření průběžně kontrolujeme a aktualizujeme s ohledem na povahu zpracovávaných údajů a související rizika.</p>
+
+      <h2 id="uchovani">11. Doby uchování</h2>
+      <table>
+        <thead>
+          <tr><th>Kategorie</th><th>Doba / kritérium</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Účet a profil</td><td>po dobu existence účtu nebo do dřívějšího odstranění konkrétního údaje</td></tr>
+          <tr><td>Osobní záznamy</td><td>po dobu účtu nebo do odstranění uživatelem</td></tr>
+          <tr><td>Technický záznam po smazání jednotlivého záznamu</td><td>nejvýše 30 dní</td></tr>
+          <tr><td>Bezpečnostní a autentizační logy</td><td>nejvýše 90 dní</td></tr>
+          <tr><td>Beta a produktová zpětná vazba</td><td>nejvýše 12 měsíců</td></tr>
+          <tr><td>Žádosti o výkon práv a související komunikace</td><td>3 roky od uzavření žádosti v minimálním rozsahu potřebném k doložení jejího vyřízení a ochraně právních nároků</td></tr>
+          <tr><td>Zpětná vazba při smazání účtu</td><td>nejvýše 12 měsíců, není‑li dříve nevratně anonymizována</td></tr>
+          <tr><td>Minimální evidence přijetí Podmínek použití a udělení nebo odvolání výslovného souhlasu</td><td>3 roky po ukončení účtu, pouze v rozsahu nezbytném k doložení příslušného právního úkonu</td></tr>
+        </tbody>
+      </table>
+      <p>Po uplynutí příslušné doby jsou osobní údaje vymazány nebo nevratně anonymizovány, není‑li jejich další uchování nezbytné ke splnění právní povinnosti nebo k určení, výkonu či obhajobě právních nároků.</p>
+
+      <h2 id="smazani">12. Smazání účtu a jednotlivých údajů</h2>
+      <p>Uživatel může účet kdykoli smazat přímo v aplikaci cestou <strong>Profil → Nastavení → Smazat účet</strong>. Smazání účtu je nevratné. Pouhé odhlášení nebo odinstalování aplikace účet nemaže. Alternativně lze o smazání požádat na <a href="mailto:info@soulq.cz">info@soulq.cz</a> z e‑mailové adresy propojené s účtem. Postup krok za krokem najdete na stránce <a href="delete-account.html">Smazání účtu</a>.</p>
+      <p>Při smazání účtu odstraníme účet, profilové údaje, osobní záznamy, údaje o náladě a spánku, osobní poznámky, profilovou fotografii a související synchronizační údaje v souladu s těmito zásadami a stanovenými retenčními pravidly. Některé omezené technické nebo právní záznamy mohou být po stanovenou dobu zachovány, pokud je jejich další uchování nezbytné pro zabezpečení služby, doložení právních úkonů nebo splnění právní povinnosti. Podrobnosti o dobách uchování jsou uvedeny v <a href="#uchovani">části 11</a> těchto zásad.</p>
+
+      <h2 id="odvolani">13. Dopad odvolání čl. 9 souhlasu</h2>
+      <p>Po odvolání výslovného souhlasu SoulQ zastaví další zpracování osobních údajů založené na tomto souhlasu. Funkce aplikace, které takové zpracování vyžadují, nebude možné po dobu, kdy souhlas není udělen, dále používat.</p>
+      <p>Odvoláním souhlasu není dotčena zákonnost zpracování provedeného před jeho odvoláním. Uživatel může své údaje kdykoli odstranit prostřednictvím funkcí aplikace nebo smazat celý účet cestou <strong>Profil → Nastavení → Smazat účet</strong>. Pokud je další uchování některých údajů nezbytné na základě jiného právního důvodu, budou uchovány pouze v nezbytném rozsahu a po stanovenou dobu.</p>
+
+      <h2 id="prava">14. Práva uživatele</h2>
+      <p>Uživatel má právo na:</p>
       <ul>
-        <li><strong>Plnění smlouvy</strong> (čl. 6 odst. 1 písm. b GDPR) — vedení účtu a poskytování funkcí aplikace.</li>
-        <li><strong>Souhlas</strong> (čl. 6 odst. 1 písm. a, resp. čl. 9 odst. 2 písm. a GDPR) — dobrovolné zaznamenávání pocitů a prožitků a nahrání profilové fotografie. Souhlas můžete kdykoli odvolat smazáním záznamů, fotografie nebo celého účtu.</li>
-        <li><strong>Oprávněný zájem</strong> (čl. 6 odst. 1 písm. f GDPR) — zabezpečení služby a předcházení zneužití.</li>
-      </ul>
-
-      <h2 id="ulozeni">5. Kde jsou údaje uloženy a kdo je zpracovává</h2>
-      <p>Část dat (záznamy, nastavení) je uložena přímo ve vašem zařízení. Údaje o účtu a synchronizovaná data jsou uloženy u našeho smluvního zpracovatele:</p>
-      <ul>
-        <li><strong>Supabase</strong> (Supabase, Inc.) — databáze, autentizace a úložiště souborů. Více na <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a>.</li>
-        <li>Při přihlášení přes <strong>Google</strong> nebo <strong>Apple</strong> zpracovávají tito poskytovatelé přihlašovací údaje podle svých vlastních zásad ochrany soukromí.</li>
-      </ul>
-      <p>Pokud dochází k předání údajů mimo Evropský hospodářský prostor, je zajištěno vhodnými zárukami podle kapitoly V GDPR (zejména standardními smluvními doložkami).</p>
-
-      <h2 id="doba">6. Doba uchování</h2>
-      <p>Údaje uchováváme po dobu existence vašeho účtu. Po smazání účtu jsou všechny vaše údaje (účet, záznamy, profilová fotografie) trvale odstraněny; ze záložních kopií zmizí nejpozději do 30 dnů. Data uložená pouze ve vašem zařízení odstraníte odinstalováním aplikace.</p>
-
-      <h2 id="prava">7. Vaše práva</h2>
-      <p>Podle GDPR máte právo na:</p>
-      <ul>
-        <li>přístup ke svým údajům,</li>
+        <li>přístup k osobním údajům,</li>
         <li>opravu nepřesných údajů,</li>
-        <li>výmaz („právo být zapomenut“) — účet můžete smazat přímo v aplikaci, viz <a href="delete-account.html">Smazání účtu</a>,</li>
-        <li>omezení zpracování a námitku proti zpracování,</li>
-        <li>přenositelnost údajů,</li>
-        <li>odvolání souhlasu, aniž by tím byla dotčena zákonnost dřívějšího zpracování,</li>
-        <li>podání stížnosti u dozorového úřadu — v ČR je jím <a href="https://uoou.gov.cz" rel="noopener">Úřad pro ochranu osobních údajů</a>.</li>
+        <li>výmaz za podmínek čl. 17 GDPR,</li>
+        <li>omezení zpracování,</li>
+        <li>přenositelnost u údajů zpracovávaných automatizovaně na základě smlouvy nebo souhlasu,</li>
+        <li>námitku proti zpracování založenému na oprávněném zájmu,</li>
+        <li>odvolání souhlasu,</li>
+        <li>stížnost u Úřadu pro ochranu osobních údajů nebo jiného příslušného dozorového úřadu.</li>
       </ul>
-      <p>Pro uplatnění práv nás kontaktujte na <a href="mailto:info@soulq.cz">info@soulq.cz</a>. Odpovíme nejpozději do 30 dnů.</p>
+      <p>Žádosti lze podat na <a href="mailto:info@soulq.cz">info@soulq.cz</a>. Odpovíme bez zbytečného odkladu, zpravidla nejpozději do jednoho měsíce; za podmínek GDPR lze lhůtu prodloužit o další dva měsíce.</p>
 
-      <h2 id="zabezpeceni">8. Zabezpečení</h2>
-      <p>Veškerá komunikace mezi aplikací a serverem probíhá šifrovaně (HTTPS/TLS). Hesla jsou ukládána pouze v podobě kryptografického otisku. Přístup k datům je chráněn pravidly, která zajišťují, že ke svým záznamům máte přístup pouze vy.</p>
+      <h2 id="deti">15. Děti</h2>
+      <p>SoulQ se z rozhodnutí provozovatele neposkytuje osobám mladším 16 let a není na ně navržena ani marketingově zaměřena. Zjistíme‑li důvodně, že účet používá osoba mladší 16 let, provedeme přiměřené ověření a přijmeme odpovídající opatření k ukončení účtu a výmazu osobních údajů, nejsou‑li dány jiné zákonné důvody pro jejich další zpracování.</p>
 
-      <h2 id="deti">9. Děti</h2>
-      <p>Aplikace není určena dětem mladším 13 let. Pokud je vám méně než 15 let, můžete aplikaci v České republice používat pouze se souhlasem zákonného zástupce (§ 7 zákona č. 110/2019 Sb.).</p>
+      <h2 id="zmeny">16. Změny zásad</h2>
+      <p>O podstatných změnách, zejména novém účelu, dodavateli, AI, zdravotní funkci, reklamě nebo novém druhu údajů, uživatele vhodně informujeme. Pokud změna vyžaduje nový souhlas, vyžádáme jej před zahájením příslušného zpracování. Aktuální verze bude dostupná v aplikaci a na oficiálním webu soulq.cz.</p>
 
-      <h2 id="upozorneni">10. Upozornění</h2>
-      <p>Aplikace slouží k osobní reflexi a poznávání sebe sama. Není zdravotnickým prostředkem a nenahrazuje odbornou lékařskou ani psychologickou péči.</p>
-
-      <h2 id="zmeny">11. Změny těchto zásad</h2>
-      <p>Zásady můžeme čas od času aktualizovat. O podstatných změnách vás budeme informovat v aplikaci nebo e‑mailem. Aktuální znění je vždy dostupné na této stránce.</p>
+      <h2 id="urad">17. Dozorový úřad</h2>
+      <p>Úřad pro ochranu osobních údajů<br>
+      Pplk. Sochora 27, 170 00 Praha 7<br>
+      <a href="https://uoou.gov.cz/" rel="noopener">https://uoou.gov.cz/</a></p>
     </main>
   </div>
 
   <footer class="site-footer">
     <div class="inner">
       <div class="about">
-        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>SoulQ<span class="dot">.</span></span></a>
         <p>Tvůj vnitřní kompas pro poznání sebe sama. SoulQ nenahrazuje odbornou péči — v krizi volejte 116&nbsp;123 (nonstop, zdarma).</p>
       </div>
       <nav aria-label="Aplikace">
@@ -159,7 +251,7 @@
         <h3>Právní</h3>
         <ul>
           <li><a href="privacy.html">Ochrana osobních údajů</a></li>
-          <li><a href="terms.html">Podmínky užití</a></li>
+          <li><a href="terms.html">Podmínky použití</a></li>
         </ul>
       </nav>
     </div>

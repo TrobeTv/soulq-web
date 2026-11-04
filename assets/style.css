@@ -1,9 +1,11 @@
 /* SoulQ web — design system.
-   Tokens derived from the app (lib/theme/app_colors.dart):
-   teal #047283, mint #D4EBE8, gold #FFC14A, app dark UI #1C1B29. */
+   Tokens per "SoulQ Brand Identity & Experience Guidelines" (2026):
+   primary teal #047283, teal accent #0A9BB0, teal deep #034E5A, teal ink #0E2A2E,
+   mint #D4EBE8, signal gold #FFC14A (SoulQ Moment), paper #F6FBFA, app dark bar #1C1B29. */
 
 :root {
   --teal: #047283;
+  --teal-accent: #0a9bb0;
   --teal-deep: #034e5a;
   --teal-ink: #0e2a2e;
   --gold: #ffc14a;
@@ -106,17 +108,22 @@ h3 {
   text-decoration: none;
   color: var(--teal-ink);
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.2rem;
+  letter-spacing: -0.01em;
   margin-right: auto;
 }
 
 .brand img {
+  /* SoulQ Symbol – master artwork, primary digital expression. Min. digital size 24 px. */
   width: 2rem;
-  height: 2rem;
-  padding: 0.28rem;
-  background: var(--teal);
-  border-radius: 9px;
+  height: auto;
+  display: block;
+}
+
+.brand .dot {
+  /* Gold full stop belongs to the approved wordmark. */
+  color: var(--gold);
 }
 
 .site-nav {

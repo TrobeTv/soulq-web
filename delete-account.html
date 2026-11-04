@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smazání účtu — SoulQ</title>
   <meta name="description" content="Jak smazat účet a všechna data v aplikaci SoulQ.">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -14,7 +16,7 @@
 <body>
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>SoulQ<span class="dot">.</span></span></a>
       <nav class="site-nav" aria-label="Hlavní navigace">
         <a href="support.html">Podpora</a>
         <a href="privacy.html" class="hide-sm">Ochrana údajů</a>
@@ -52,24 +54,31 @@
         <li>Otevřete <strong>Nastavení</strong>.</li>
         <li>Zvolte <strong>Smazat účet</strong> a potvrďte.</li>
       </ol>
-      <p>Účet i všechna data jsou smazána okamžitě.</p>
+      <p>Smazání je okamžité, bez karantény a nevratné. Pouhé odhlášení nebo odinstalování aplikace účet nemaže.</p>
 
       <h2 id="emailem">2. Žádost e‑mailem</h2>
-      <p>Pokud se do aplikace nemůžete přihlásit, pošlete žádost o smazání účtu z e‑mailové adresy, kterou jste při registraci použili, na adresu <a href="mailto:info@soulq.cz?subject=SoulQ%20%E2%80%94%20%C5%BE%C3%A1dost%20o%20smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu">info@soulq.cz</a> s předmětem <em>„SoulQ — žádost o smazání účtu“</em>. Žádost vyřídíme nejpozději do 30 dnů a potvrdíme vám ji.</p>
+      <p>Pokud se do aplikace nemůžete přihlásit, pošlete žádost o smazání účtu z e‑mailové adresy, kterou jste při registraci použili, na adresu <a href="mailto:info@soulq.cz?subject=SoulQ%20%E2%80%94%20%C5%BE%C3%A1dost%20o%20smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu">info@soulq.cz</a> s předmětem <em>„SoulQ — žádost o smazání účtu“</em>. Žádost vyřídíme bez zbytečného odkladu, zpravidla nejpozději do jednoho měsíce, a potvrdíme vám ji.</p>
 
       <h2 id="co-se-smaze">3. Co bude smazáno</h2>
       <ul>
-        <li>váš uživatelský účet (e‑mail, uživatelské jméno, rok narození),</li>
-        <li>všechny vaše záznamy (pocity, jejich důvody a poznámky),</li>
+        <li>váš uživatelský účet (e‑mail, uživatelské jméno) a profilové údaje (rok narození, případně jméno, příjmení a pohlaví),</li>
+        <li>všechny vaše osobní záznamy — nálada, kvalita spánku, jejich důvody a poznámky,</li>
         <li>profilová fotografie,</li>
-        <li>propojení s přihlášením přes Google nebo Apple.</li>
+        <li>propojení s přihlášením přes Google nebo Apple,</li>
+        <li>související synchronizační údaje.</li>
       </ul>
 
       <h2 id="retence">4. Doba uchování po smazání</h2>
-      <p>Smazání je trvalé a nevratné. Data zmizí okamžitě z produkční databáze a nejpozději do <strong>30 dnů</strong> i ze záložních kopií. Žádná data si po smazání účtu neponecháváme.</p>
+      <p>Smazání je trvalé a nevratné; údaje jsou z produkční databáze odstraněny okamžitě. Po stanovenou dobu mohou být zachovány pouze omezené technické nebo právní záznamy, pokud je to nezbytné pro zabezpečení služby, doložení právních úkonů nebo splnění právní povinnosti — zejména:</p>
+      <ul>
+        <li>bezpečnostní a autentizační logy nejvýše <strong>90 dní</strong>,</li>
+        <li>zpětná vazba zadaná při smazání účtu nejvýše <strong>12 měsíců</strong>, není‑li dříve nevratně anonymizována,</li>
+        <li>minimální evidence přijetí Podmínek použití a udělení či odvolání výslovného souhlasu <strong>3 roky</strong> po ukončení účtu.</li>
+      </ul>
+      <p>Úplný přehled dob uchování najdete v <a href="privacy.html#uchovani">Zásadách ochrany osobních údajů, části 11 a 12</a>.</p>
 
       <div class="notice">
-        <p><strong>Tip:</strong> Data uložená pouze ve vašem zařízení (pokud jste aplikaci používali bez účtu) odstraníte odinstalováním aplikace nebo vymazáním jejích dat v nastavení systému.</p>
+        <p><strong>Tip:</strong> Lokální (offline) kopii dat ve vašem zařízení odstraníte odinstalováním aplikace nebo vymazáním jejích dat v nastavení systému. Samotné odinstalování ale účet na serveru nemaže — použijte jeden z postupů výše.</p>
       </div>
     </main>
   </div>
@@ -77,7 +86,7 @@
   <footer class="site-footer">
     <div class="inner">
       <div class="about">
-        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">SoulQ</a>
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>SoulQ<span class="dot">.</span></span></a>
         <p>Tvůj vnitřní kompas pro poznání sebe sama. SoulQ nenahrazuje odbornou péči — v krizi volejte 116&nbsp;123 (nonstop, zdarma).</p>
       </div>
       <nav aria-label="Aplikace">
@@ -93,7 +102,7 @@
         <h3>Právní</h3>
         <ul>
           <li><a href="privacy.html">Ochrana osobních údajů</a></li>
-          <li><a href="terms.html">Podmínky užití</a></li>
+          <li><a href="terms.html">Podmínky použití</a></li>
         </ul>
       </nav>
     </div>

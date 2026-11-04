@@ -9,10 +9,17 @@ Statický web (čisté HTML/CSS, žádné závislosti) se stránkami, které vy�
 | Landing | `index.html` | `en/index.html` | Marketing URL (App Store), domovská stránka |
 | Zásady ochrany os. údajů | `privacy.html` | `en/privacy.html` | **Povinné** — Privacy Policy URL (Play i App Store) |
 | Smazání účtu | `delete-account.html` | `en/delete-account.html` | **Povinné pro Play** — aplikace umožňuje registraci |
-| Podmínky užití | `terms.html` | `en/terms.html` | App Store (EULA), doporučené pro Play |
+| Podmínky použití | `terms.html` | `en/terms.html` | App Store (EULA), doporučené pro Play |
 | Podpora | `support.html` | `en/support.html` | **Povinné pro App Store** — Support URL |
 
-Sdílené styly: `assets/style.css`, logo: `assets/logo.svg`. Barvy odpovídají aplikaci (`lib/theme/app_colors.dart`): teal `#047283`, krémová `#FFF7ED`, zlatá `#FFC14A`. Web podporuje světlý i tmavý režim.
+Sdílené styly: `assets/style.css`. Brand assety podle „SoulQ Brand Identity & Experience Guidelines“ (2026):
+
+- `assets/logo.svg` — SoulQ Symbol, *primary digital* (gradient #0A9BB0 → #047283 → #034E5A, zlatý Moment #FFC14A). Master artwork — nepřekreslovat, neotáčet, nedeformovat.
+- `assets/logo-reversed.svg` — *reversed* varianta (krémový symbol #FFF7ED) pro tmavé nebo teal plochy.
+- `assets/favicon.svg`, `assets/favicon-32.png`, `assets/apple-touch-icon.png` — ikona aplikace (vertikální gradient #6A3DE8 → #0F859D), stejná jako v obchodech.
+- Wordmark „SoulQ.“ — Bricolage Grotesque 600, teal ink #0E2A2E, zlatá tečka (`<span class="dot">.</span>`).
+
+Barvy: primary teal `#047283`, teal accent `#0A9BB0`, teal deep `#034E5A`, mint `#D4EBE8`, signal gold `#FFC14A`, paper `#F6FBFA`.
 
 ## Nasazení
 
@@ -43,10 +50,12 @@ Web musí být na **veřejné, trvalé URL** (Google nepřijímá PDF ani geogra
 
 - [x] **Právní identita správce** — Mikuláš Báča (doplněno v privacy, terms i delete-account).
 - [x] **Kontaktní e-mail** — info@soulq.cz (na všech stránkách; schránka musí existovat a někdo ji musí číst).
-- [ ] **Region Supabase projektu** — pokud je projekt hostovaný mimo EU, věta o předávání dat mimo EHP v privacy policy platí; pokud je v EU, můžete ji upřesnit („data jsou uložena v EU").
+- [x] **Region Supabase projektu** — Frankfurt (eu-central-1), uvedeno v privacy v2.0.
 - [ ] **Odkazy na obchody** — na landing page jsou placeholdery „již brzy"; po publikaci nahraďte skutečnými odkazy na Play/App Store.
-- [ ] **Retence záloh (30 dnů)** — v privacy i delete-account je uvedeno max. 30 dnů; ověřte, že odpovídá nastavení záloh v Supabase.
-- [ ] Datum účinnosti (14. 7. 2026) aktualizujte, pokud texty před publikací změníte.
+- [x] **Retence** — delete-account odpovídá tabulce dob uchování v privacy v2.0 (logy 90 dní, zpětná vazba 12 měsíců, evidence souhlasů 3 roky).
+- [x] **Právní texty verze 2.0** (účinnost 5. 11. 2026, aktualizace 4. 11. 2026) — privacy i terms v CZ; EN verze jsou překlad s doložkou, že rozhodná je česká verze.
+- [ ] Stejnou verzi 2.0 právních textů nasadit i do aplikace (`lib/data/legal_documents.dart`), aby se shodovala s webem.
+- [ ] Datum účinnosti aktualizujte, pokud texty před publikací změníte.
 
 ## Lokální náhled
 
